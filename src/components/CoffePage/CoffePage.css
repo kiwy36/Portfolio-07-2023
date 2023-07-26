@@ -1,0 +1,298 @@
+/* Estilos generales */
+.contenedor-cafeteria {
+  background-color: #242424;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Estilos para la portada */
+
+.contenido-portada h1 {
+  color: gold;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenido-portada p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Estilos para la sección "Acerca de El Taller del Café Aller" */
+.info-cafeteria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.info-cafeteria-text {
+  width: 40%;
+  height: 400px;
+}
+/* Estilos para el carrusel */
+.carousel .slide img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .info-cafeteria {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-cafeteria-text {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .carousel-container{
+    margin: 0px;
+    padding: 0;
+    min-width: 100%;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .carousel .slide{
+    max-height: 400px;
+  }
+}
+
+/* Estilos para la lista de productos */
+.ul-no-list-style {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.ul-no-list-style li {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.producto-imagen {
+  width: 210px;
+  height: auto;
+  border: 2px solid aquamarine;
+  border-radius: 50%;
+}
+@media (max-width: 1030px) {
+  .ul-no-list-style {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .ul-no-list-style {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  .ul-no-list-style li {
+    font-size: 1rem;
+  }
+
+  .producto-imagen {
+    width: 150px;
+    border: 1px solid aquamarine;
+  }
+}
+/* Estilos para la sección de menú y combos */
+@media (max-width: 1024px) {
+  .menu-cafeteria {
+    margin-top: 100px;
+  }
+}
+.menu-cafeteria h2 {
+  text-align: center;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.menu-cafeteria ul:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.menu-cafeteria ul:last-child li {
+  border: 1px solid aquamarine;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 1px aquamarine;
+}
+@media (max-width: 768px) {
+  .menu-cafeteria ul:last-child {
+    color: black;
+    grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas en vista móvil */
+  }
+  .menu-cafeteria-combos li{
+    background-color: gold;
+  }
+}
+/* Estilos para la sección de próximos eventos */
+.eventos-cafeteria li{
+  padding: 30px;
+  border: aquamarine 3px solid;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 0 0 5px 3px aquamarine;
+}
+.eventos-cafeteria ul:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1024px){
+  .eventos-cafeteria ul:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eventos-cafeteria li {
+    min-width: 100%;
+    padding: 15px;
+    border: aquamarine 2px solid;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .eventos-cafeteria ul:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eventos-cafeteria li {
+    min-width: 100%;
+    padding: 15px;
+    border: aquamarine 2px solid;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+/* Estilos para la sección de contacto */
+.contactos-cafeteria {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.columna-formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  margin-right: 10px;
+  margin-top: 2rem;
+}
+
+/* Estilos para el texto poético */
+.contacto-texto-poetico {
+  flex: 1;
+  background-color: aquamarine;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.contacto-texto-poetico p {
+  margin: 0;
+}
+
+/* Estilos para la imagen de contacto */
+.imagen-contacto {
+  max-width: 421px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 2.5rem;
+}
+
+.imagen-contacto img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid gold;
+}
+
+/* Estilos para los formularios */
+.formulario-cafeteria {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.formulario-cafeteria label {
+  color: gold;
+  margin-bottom: 8px;
+}
+
+.formulario-cafeteria input[type="text"],
+.formulario-cafeteria input[type="email"],
+.formulario-cafeteria textarea {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid aquamarine;
+  color: black;
+}
+
+.formulario-cafeteria textarea {
+  resize: vertical;
+}
+
+.formulario-cafeteria button {
+  padding: 10px 16px;
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .imagen-contacto img {
+    display: none;
+  }
+
+  .formulario-cafeteria {
+    min-width: 100%;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+  .formulario-cafeteria label,
+  .formulario-cafeteria input[type="text"],
+  .formulario-cafeteria input[type="email"],
+  .formulario-cafeteria textarea,
+  .formulario-cafeteria button {
+    min-width: 100%;
+  }
+}
+/* Estilos para los títulos de las secciones */
+.info-cafeteria h2,
+.menu-cafeteria h2,
+.eventos-cafeteria h2,
+.contactos-cafeteria h2 {
+  color: gold;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}

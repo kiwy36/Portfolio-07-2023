@@ -1,0 +1,128 @@
+.memorama {
+  background-color: #252525;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  border: aquamarine 2px solid;
+}
+.memorama tr{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.memorama .contenido-seccion {
+  max-width: 70%;
+  margin: 0px auto 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.memorama .gameData {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+.memorama h2 {
+  font-family: 'Righteous';
+  font-size: 30px;
+  text-align: center;
+}
+.memorama h1 {
+  color: aquamarine;
+  font-family: 'Righteous';
+  font-size: 40px;
+  text-align: center;
+}
+
+.memorama table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.memorama .card {
+  width: 100px;
+  height: 150px;
+  border: aquamarine 2px solid;
+  background-color: #ccc;
+  margin: 1px;
+  transition: background-color 0.3s;
+  background-size: cover;
+}
+.memorama .card:hover{
+  border: red 2px solid;
+}
+.memorama .card.flipped {
+  background-color: transparent;
+}
+
+.memorama .card.matched {
+  pointer-events: none;
+  background-color: #888;
+}
+
+.memorama .iniciador {
+  color: black;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  border: 1px solid aquamarine;
+  width: 180px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .memorama .contenido-seccion {
+    margin: auto 20px 0;
+    max-width: 100%;
+  }
+  .memorama {
+    flex-direction: column;
+    height: auto;
+  }
+  .memorama .gameData{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .memorama tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .memorama h2 {
+    font-size: 25px;
+  }
+  .memorama h1 {
+    font-size: 35px;
+  }
+  .memorama .card {
+    width: 80px;
+    height: 120px;
+  }
+
+  .memorama .iniciador {
+    width: 140px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+}

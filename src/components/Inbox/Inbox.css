@@ -1,0 +1,77 @@
+.sobre{
+    border-radius: 100%;
+    width: 2rem;
+    margin: 0 5px;
+}
+.imagen-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 100%;
+    border: 3px solid aquamarine;
+    max-width: 100%;
+    height: auto;
+    max-height: 8rem;
+}
+.contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border:none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto button:hover{
+    color: black;
+}
