@@ -3,7 +3,7 @@ import MyDate from '../components/MyDate/MyDate'
 import Skills from '../components/Skills/Skills'
 import Curriculum from '../components/Curriculum/Curriculum'
 import Proyectos from '../components/Proyectos/Proyectos'
-import Inbox from '../components/inbox/inbox'
+import Inbox from '../components/Inbox/Inbox'
 import CustomNavbar from '../components/CustomNavbar/CustomNavbar'
 import './Root.css'
 
