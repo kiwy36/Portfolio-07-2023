@@ -44,7 +44,7 @@ const Inbox = () => {
                             <textarea name="message" id='' cols="30" rows='10' placeholder='Mensaje'/>
                             <button type="submit" value="Send">Enviar Mensaje
                                 <img className='sobre' src='https://i.ibb.co/6PcbQTM/pngegg.png' alt='sobre'/>
-                                <spam className='overlay'></spam>
+                                <div className='overlay'></div>
                             </button>
                         </form>
                     </div>

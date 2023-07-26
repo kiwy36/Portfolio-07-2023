@@ -5,6 +5,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
+import { BrowserRouter } from 'react-router-dom';
 
 
 import { initializeApp } from "firebase/app";
@@ -28,6 +29,8 @@ const analytics = getAnalytics(app);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )

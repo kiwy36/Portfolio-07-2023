@@ -26,7 +26,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Memorama Saurio</h3>
                             <p>Gana el juego en menos de 100 movimientos y 120 segundos!!!</p>
-                            <Link className='start-button' target="_blank" rel="noreferrer" relative='path' to='/memorama'>Play</Link>
+                            <Link className='start-button' target="_blank" rel="noreferrer"  to='/memorama'>Play</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -34,7 +34,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Dino Duelo</h3>
                             <p>Juego de cartas donde competiras contra la pc para ver quien tiene mas puntos</p>
-                            <Link className='start-button' target="_blank" rel="noreferrer" relative='path' to='/batlegame'>Play</Link>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/batlegame'>Play</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -42,7 +42,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Tienda de Indumentaria</h3>
                             <p>Simulador de tienda de compras interactiva</p>
-                            <Link className='start-button' target="_blank" rel="noreferrer" relative='path' to='/EcommerceCap'>Ver</Link>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/EcommerceCap'>Ver</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -50,7 +50,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Cafeteria Steampunk</h3>
                             <p>Simulador de la pagina publicitaria de una cafeteria</p>
-                            <Link className='start-button' target="_blank" rel="noreferrer" relative='path' to='/Coffepage'>Ver</Link>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/Coffepage'>Ver</Link>
                         </div>
                     </div>
                 </div>
