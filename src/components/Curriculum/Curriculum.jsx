@@ -31,7 +31,7 @@ const Curriculum = () => {
                         <img className='imagen-item-cv' src='https://i.ibb.co/GkWD6xf/coder.jpg' alt='coderlogo'/>
                     </div>
                         <div className='item'>
-                            <h1 className='title-item'>Autodidacta 2022-2023</h1>
+                            <h1 className='title-item'>Autodidacta<br/>2022-2023</h1>
                             <p className='info-cv'>
                                 Tengo conocimiento en manejo de librerías y utilización de
                                 IA. Manejo el inglés técnico pero poco a nivel conversación.
@@ -45,7 +45,7 @@ const Curriculum = () => {
                     <div className='grid-item'>
                     <h1  className='title-area'>Experiencia</h1>
                         <div className='item'>
-                            <h1 className='title-item'>Kiosco 2015-2023</h1>
+                            <h1 className='title-item'>Atención al cliente<br/>2015-2023</h1>
                             <p className='info-cv'>
                                 Trabajé en un kiosco donde me encargaba de la recepción de
                                 clientes, el manejo de caja y la reposición de mercadería.
@@ -55,7 +55,7 @@ const Curriculum = () => {
                             <img className='imagen-item-cv' src='https://i.ibb.co/Fs8JD0Q/kiosco.png' alt='kiosko'/>
                         </div>
                         <div className='item'>
-                            <h1 className='title-item'>Independiente 2023-2023</h1>
+                            <h1 className='title-item'>Independiente<br/>2023-2023</h1>
                             <p className='info-cv'>
                                 Mis proyectos anteriores comprenden galerías, ecommerce y
                                 mini juegos, todos ellos desarrollados durante mi etapa

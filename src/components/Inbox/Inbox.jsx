@@ -2,6 +2,8 @@ import './Inbox.css';
 import { useRef,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const Inbox = () => {
     const contacRef = useRef(null);
@@ -43,7 +45,7 @@ const Inbox = () => {
                             <input type='text' name="subject" placeholder='Tema'/>
                             <textarea name="message" id='' cols="30" rows='10' placeholder='Mensaje'/>
                             <button type="submit" value="Send">Enviar Mensaje
-                                <img className='sobre' src='https://i.ibb.co/6PcbQTM/pngegg.png' alt='sobre'/>
+                                <FontAwesomeIcon className='icon-sobre' icon={faEnvelope} size='xl' />
                                 <div className='overlay'></div>
                             </button>
                         </form>

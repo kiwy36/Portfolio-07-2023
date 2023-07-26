@@ -15,9 +15,6 @@ function CustomNavbar() {
               <Nav.Link id="mydate-link" onClick={() => {}}>
                 <li className="link">Sobre mi</li>
               </Nav.Link>
-              <Nav.Link id="skills-link" onClick={() => {}}>
-                <li className="link">Skills</li>
-              </Nav.Link>
               <Nav.Link id="curriculum-link" onClick={() => {}}>
                 <li className="link">Curriculum</li>
               </Nav.Link>

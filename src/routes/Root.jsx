@@ -1,6 +1,5 @@
 import Banner from '../components/Banner/Banner'
 import MyDate from '../components/MyDate/MyDate'
-import Skills from '../components/Skills/Skills'
 import Curriculum from '../components/Curriculum/Curriculum'
 import Proyectos from '../components/Proyectos/Proyectos'
 import Inbox from '../components/Inbox/Inbox'
@@ -13,7 +12,6 @@ const Root = () => {
       <CustomNavbar/>
       <Banner/>
       <MyDate/>
-      <Skills/>
       <Curriculum/>
       <Proyectos/>
       <Inbox/>

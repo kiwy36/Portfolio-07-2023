@@ -1,7 +1,8 @@
 import { useRef,useEffect } from 'react';
 import './MyDate.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGamepad, faCameraRetro, faMusic, faBook, faPersonHiking, faSchoolCircleCheck, faPaperPlane, faFilm} from '@fortawesome/free-solid-svg-icons';
+import {faHourglass, faEarListen, faPeopleGroup, faSchoolCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import {faCss3Alt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const MyDate = () => {
     const mydateRef = useRef(null);
@@ -47,31 +48,31 @@ const MyDate = () => {
                             </ul>
                         </div>
                         <div className='col'>
-                            <h3>Intereses</h3>
+                            <h3>Mis Habilidades</h3>
                             <div className='contenedor-intereses'>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faGamepad} /><span>Juegos</span>
+                                    <FontAwesomeIcon className='icono' icon={faHtml5}/><span>Html</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faCameraRetro}/><span>Fotografia</span>
+                                    <FontAwesomeIcon className='icono' icon={faCss3Alt} /><span>Css</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faMusic} /><span>Musica</span>
+                                    <FontAwesomeIcon className='icono' icon={faJs} /><span>Javascript</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faBook} /><span>Lectura</span>
+                                    <FontAwesomeIcon className='icono' icon={faReact} /><span>React</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faPersonHiking} /><span>Trekking</span>
+                                    <FontAwesomeIcon className='icono' icon={faHourglass} /><span>Dedicación</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faSchoolCircleCheck} /><span>Investigar</span>
+                                    <FontAwesomeIcon className='icono' icon={faSchoolCircleCheck} /><span>Investigación</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faPaperPlane} /><span>Origami</span>
+                                    <FontAwesomeIcon className='icono' icon={faPeopleGroup} /><span>Teamwork</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faFilm} /><span>Series</span>
+                                    <FontAwesomeIcon className='icono' icon={faEarListen} /><span>Aprendizaje</span>
                                 </div>
                             </div>
                         </div>

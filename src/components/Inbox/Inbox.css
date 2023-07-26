@@ -1,7 +1,5 @@
-.sobre{
-    border-radius: 100%;
-    width: 2rem;
-    margin: 0 5px;
+.icon-sobre{
+    margin-left: 5px;
 }
 .imagen-item {
     position: absolute;
@@ -14,7 +12,7 @@
     max-height: 8rem;
 }
 .contacto{
-    background-color: #1e2326;
+    background-color: #101213;
     color: #fff;
     padding: 50px 20px;
 }
@@ -49,7 +47,8 @@
 .contacto button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
     width: fit-content;
     display: block;
     margin: 20px auto;
