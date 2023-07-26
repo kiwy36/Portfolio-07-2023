@@ -10,11 +10,11 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Root/>}/>
-                <Route path="/memorama" element={<Memorama/>} />
-                <Route path="/batlegame" element={<BattleGame/>} />
-                <Route path="/EcommerceCap" element={<EcommerceCap/>} />
-                <Route path="/Coffepage" element={<CoffePage/>}/>
+                <Route path="/" exact element={<Root/>}/>
+                <Route path="/memorama" exact element={<Memorama/>} />
+                <Route path="/batlegame" exact  element={<BattleGame/>} />
+                <Route path="/EcommerceCap" exact element={<EcommerceCap/>} />
+                <Route path="/Coffepage" exact  element={<CoffePage/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>

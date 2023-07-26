@@ -1,5 +1,6 @@
 import './Proyectos.css';
 import { useRef,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Proyectos = () => {
     const proyecRef = useRef(null);
@@ -25,7 +26,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Memorama Saurio</h3>
                             <p>Gana el juego en menos de 100 movimientos y 120 segundos!!!</p>
-                            <a className='start-button' target="_blank" rel="noreferrer" href='/memorama'>Play</a>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/memorama'>Play</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -33,7 +34,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Dino Duelo</h3>
                             <p>Juego de cartas donde competiras contra la pc para ver quien tiene mas puntos</p>
-                            <a className='start-button' target="_blank" rel="noreferrer" href='/batlegame'>Play</a>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/batlegame'>Play</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -41,7 +42,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Tienda de Indumentaria</h3>
                             <p>Simulador de tienda de compras interactiva</p>
-                            <a className='start-button' target="_blank" rel="noreferrer" href='/EcommerceCap'>Ver</a>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/EcommerceCap'>Ver</Link>
                         </div>
                     </div>
                     <div className='proyecto'>
@@ -49,7 +50,7 @@ const Proyectos = () => {
                         <div className='overlay'>
                             <h3>Cafeteria Steampunk</h3>
                             <p>Simulador de la pagina publicitaria de una cafeteria</p>
-                            <a className='start-button' target="_blank" rel="noreferrer" href='/Coffepage'>Ver</a>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='/Coffepage'>Ver</Link>
                         </div>
                     </div>
                 </div>
