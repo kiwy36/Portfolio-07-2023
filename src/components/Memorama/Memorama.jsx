@@ -162,9 +162,9 @@ const Memorama = () => {
       </section>
       <section className="gameData">
         {gameLost ? (
-          <h2 className="gameLost">¡Has perdido! Movimientos realizados: {moves}</h2>
+          <h2 className="gameLost">¡Has perdido! <br/>Movimientos realizados: {moves}</h2>
         ) : gameWon ? (
-          <h2 className="gameWon">¡Ganaste! ¡Felicitaciones!</h2>
+          <h2 className="gameWon">¡Ganaste! <br/>¡Felicitaciones!</h2>
         ) : (
           <>
             <h2 className="aciertos estadisticas">Aciertos: <span id="contador_aciertos">{successCount}</span></h2>

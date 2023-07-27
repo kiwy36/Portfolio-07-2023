@@ -74,3 +74,7 @@
 .contacto button:hover{
     color: black;
 }
+.inbox-incompleto{
+    color: aquamarine;
+    text-align: center;
+}

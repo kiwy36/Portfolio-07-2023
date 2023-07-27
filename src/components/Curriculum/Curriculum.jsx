@@ -35,8 +35,8 @@ const Curriculum = () => {
                             <p className='info-cv'>
                                 Tengo conocimiento en manejo de librerías y utilización de
                                 IA. Manejo el inglés técnico pero poco a nivel conversación.
-                                Además, tengo experiencia en el uso de Photoshop y diseño
-                                UX/UI en niveles iniciales. Mi potencial está en constante
+                                Además, tengo experiencia en el diseño UX/UI en niveles
+                                iniciales. Mi potencial está en constante
                                 crecimiento.
                             </p>
                             <img className='imagen-item-cv' src='https://i.ibb.co/JHT6gJr/sause.jpg' alt='arbol'/>

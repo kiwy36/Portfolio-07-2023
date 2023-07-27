@@ -8,7 +8,7 @@ function CustomNavbar() {
     <>
       <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
         <Container fluid className='container'>
-          <Navbar.Brand href='/' id="banner-link" onClick={() => {}}><h1 className="logo">Wittner Kevin</h1></Navbar.Brand>
+          <Navbar.Brand href='#inicio' id="banner-link" onClick={() => {}}><h1 className="logo">Wittner Kevin</h1></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">
