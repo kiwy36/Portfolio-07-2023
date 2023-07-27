@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './Memorama.css';
 
 const Memorama = () => {
+  const [showGame, setShowGame] = useState(false);
   const [time, setTime] = useState(0);
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
@@ -102,7 +103,10 @@ const Memorama = () => {
       }
     }
   };
-
+  const startGameHandler = () => {
+    startGame();
+    setShowGame(true); // Mostrar el juego al iniciar
+  };
   const restartGame = () => {
     setGameLost(false);
     setGameWon(false);
@@ -129,51 +133,65 @@ const Memorama = () => {
   };
 
   const renderStartButton = () => {
-    if (gameLost) {
-      return <button className="iniciador" onClick={restartGame}>Volver a Jugar</button>;
-    } else if (gameWon) {
-      return <button className="iniciador" onClick={restartGame}>Jugar de Nuevo</button>;
-    } else {
-      return (
-        <button className="iniciador" onClick={() => {
-          if (gameRunning) {
-            setGameRunning(false);
-            setGameStarted(false);
-          } else {
-            setGameRunning(true);
-            startGame();
-          }
-        }}>
-          {gameRunning ? 'Detener Juego' : 'Iniciar Juego'}
-        </button>
-      );
+    if(showGame){
+      if (gameLost) {
+        return <button className="iniciador" onClick={restartGame}>Volver a Jugar</button>;
+      } else if (gameWon) {
+        return <button className="iniciador" onClick={restartGame}>Jugar de Nuevo</button>;
+      } else {
+        return (
+          <button className="iniciador" onClick={() => {
+            if (gameRunning) {
+              setGameRunning(false);
+              setGameStarted(false);
+            } else {
+              setGameRunning(true);
+              startGame();
+            }
+          }}>
+            {gameRunning ? 'Detener Juego' : 'Iniciar Juego'}
+          </button>
+        );
+      }
+    }else { // Si el juego no ha comenzado, mostramos el botón "Comenzar a jugar"
+      return <button className="iniciador" onClick={() => setShowGame(true)}>Comenzar a Jugar</button>;
     }
   };
 
   return (
     <main id="inicio" className="memorama">
       <section className="contenido-seccion">
-        <h1>Memorama Saurio</h1>
-        <table>
-          <tbody>
-            <tr>{renderCards()}</tr>
-          </tbody>
-        </table>
-      </section>
-      <section className="gameData">
-        {gameLost ? (
-          <h2 className="gameLost">¡Has perdido! <br/>Movimientos realizados: {moves}</h2>
-        ) : gameWon ? (
-          <h2 className="gameWon">¡Ganaste! <br/>¡Felicitaciones!</h2>
-        ) : (
-          <>
-            <h2 className="aciertos estadisticas">Aciertos: <span id="contador_aciertos">{successCount}</span></h2>
-            <h2 className="t-restantes estadisticas">Tiempo: <span id="contador_cronometro">{time}</span> segundos</h2>
-            <h2 className="movimientos estadisticas">Movimientos: <span id="contador_estadisticas">{moves}</span></h2>
-          </>
+        <h1 className='memo-title'>Memorama Saurio</h1>
+        {showGame ? ( // Si el juego está en curso, mostramos las cartas
+          <table className='memo-game'>
+            <tbody>
+              <tr>{renderCards()}</tr>
+            </tbody>
+          </table>
+        ) : ( // Si el juego no ha comenzado, mostramos el botón "Comenzar a jugar"
+          <button className="iniciador" onClick={startGameHandler}>
+            Comenzar a Jugar
+          </button>
         )}
-        {renderStartButton()}
       </section>
+      {showGame && ( // Mostramos los elementos del juego solo si el juego ha comenzado
+        <section className="gameData">
+          {gameLost ? (
+            <h2 className="gameLost">¡Has perdido! <br/>Movimientos realizados: {moves}</h2>
+          ) : gameWon ? (
+            <h2 className="gameWon">¡Ganaste! <br/>¡Felicitaciones!</h2>
+          ) : (
+            <>
+              <div className='memo-data-game'>
+                <h2 className="aciertos estadisticas">Aciertos: <span id="contador_aciertos">{successCount}</span></h2>
+                <h2 className="t-restantes estadisticas">Tiempo: <span id="contador_cronometro">{time}</span> segundos</h2>
+                <h2 className="movimientos estadisticas">Movimientos: <span id="contador_estadisticas">{moves}</span></h2>
+              </div>
+            </>
+          )}
+          {renderStartButton()}
+        </section>
+      )}
     </main>
   );
 };
