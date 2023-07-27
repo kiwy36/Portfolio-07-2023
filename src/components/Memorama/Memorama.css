@@ -46,9 +46,6 @@
   width: 100%;
   border-collapse: collapse;
 }
-
-
-
 .memorama .card {
   width: 100px;
   height: 150px;
@@ -98,11 +95,12 @@
     align-items: center;
     min-height: 90vh;
     height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .memorama .gameData {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 5px;
   }
   .memorama .memo-game {
     max-width: 100%;
