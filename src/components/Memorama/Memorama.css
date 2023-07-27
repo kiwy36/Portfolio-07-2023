@@ -103,7 +103,15 @@
     margin: 0 5px;
   }
   .memorama .memo-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 100%;
+    max-width: calc(100% - 10px);
+  }
+  .memorama .card {
+    width: calc(33.3% - 10px);
+    height: 120px;
   }
   .memorama tr {
     display: flex;
