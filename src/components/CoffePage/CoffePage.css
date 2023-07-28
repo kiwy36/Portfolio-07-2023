@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .info-cafeteria-text {
@@ -59,7 +59,7 @@
 
   .info-cafeteria-text {
     width: 100%;
-    margin-bottom: 8rem;
+    height: auto;
   }
   .carousel-container{
     margin: 0px;
@@ -74,7 +74,7 @@
 }
 
 /* Estilos para la lista de productos */
-.ul-no-list-style {
+.menu-cafeteria-productos {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -82,35 +82,40 @@
   padding: 20px;
   overflow: hidden;
 }
-
-.ul-no-list-style li {
+.menu-cafeteria ul.menu-cafeteria-productos,
+.menu-cafeteria ul.menu-cafeteria-combos,
+.eventos-cafeteria ul.calendario-eventos {
+  list-style: none;
+  padding: 0;
+}
+.menu-cafeteria-productos li {
   text-align: center;
   font-size: 1.3rem;
 }
 
-.producto-imagen {
+.menu-cafeteria-productos .producto-imagen {
   width: 210px;
   height: auto;
   border: 2px solid aquamarine;
   border-radius: 50%;
 }
 @media (max-width: 1030px) {
-  .ul-no-list-style {
+  .menu-cafeteria-productos {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 768px) {
-  .ul-no-list-style {
+  .menu-cafeteria-productos {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
 
-  .ul-no-list-style li {
+  .menu-cafeteria-productos li {
     font-size: 1rem;
   }
 
-  .producto-imagen {
-    width: 150px;
+  .menu-cafeteria-productos .producto-imagen {
+    width: 130px;
     border: 1px solid aquamarine;
   }
 }
@@ -126,13 +131,13 @@
   margin-bottom: 20px;
 }
 
-.menu-cafeteria ul:last-child {
+.menu-cafeteria ul.menu-cafeteria-combos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-.menu-cafeteria ul:last-child li {
+.menu-cafeteria ul.menu-cafeteria-combos li {
   border: 1px solid aquamarine;
   border-radius: 8px;
   padding: 10px;
@@ -140,11 +145,14 @@
   box-shadow: 0 0 10px 1px aquamarine;
 }
 @media (max-width: 768px) {
-  .menu-cafeteria ul:last-child {
+  .menu-cafeteria{
+    margin-top: 20px;
+  }
+  .menu-cafeteria ul.menu-cafeteria-combos {
     color: black;
     grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas en vista móvil */
   }
-  .menu-cafeteria-combos li{
+  .menu-cafeteria ul.menu-cafeteria-combos li{
     background-color: gold;
   }
 }
@@ -154,6 +162,7 @@
   border: aquamarine 3px solid;
   border-radius: 8px;
   font-size: 20px;
+  margin: 10px;
   box-shadow: 0 0 5px 3px aquamarine;
 }
 .eventos-cafeteria ul:last-child {
@@ -185,6 +194,7 @@
     border: aquamarine 2px solid;
     font-size: 18px;
     margin-bottom: 10px;
+    margin: 5px;
   }
 }
 /* Estilos para la sección de contacto */
@@ -271,7 +281,9 @@
   .imagen-contacto img {
     display: none;
   }
-
+  .columna-formulario {
+    margin-right: 0px;
+  }
   .formulario-cafeteria {
     min-width: 100%;
     width: 90%;
@@ -284,6 +296,13 @@
   .formulario-cafeteria textarea,
   .formulario-cafeteria button {
     min-width: 100%;
+  }
+  .contactos-cafeteria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactos-cafeteria .columna-formulario h2{
+    font-size: 33px;
   }
 }
 /* Estilos para los títulos de las secciones */

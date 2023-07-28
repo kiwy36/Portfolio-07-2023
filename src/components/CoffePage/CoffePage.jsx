@@ -67,7 +67,7 @@ const CoffePage = () => {
       </section>
       <section className='menu-cafeteria'>
         <h2>Nuestro Menú de especialidades</h2>
-        <ul className="ul-no-list-style menu-cafeteria-productos">
+        <ul className="menu-cafeteria-productos">
         {productos.map((producto, index) => (
             <li key={index}>
               <img src={producto.imgSrc} alt={producto.descripcion} className="producto-imagen" /><br/>
@@ -76,7 +76,7 @@ const CoffePage = () => {
         ))}
         </ul>
         <h2>Nuestros combos especiales</h2>
-        <ul className="ul-no-list-style menu-cafeteria-combos">
+        <ul className="menu-cafeteria-combos">
           <li>Combo Mecánico - Capuchino y galletas de chocolate por solo 20 Kiwy Pesos</li>
           <li>Combo de la Revolución - Cafe Fuerte y dos scones de frutas por 30 Kiwy Pesos</li>
           <li>Combo Técnico - Latte y una rebanada de pastel por 30 Kiwy Pesos</li>
@@ -90,7 +90,7 @@ const CoffePage = () => {
       </section>
       <section className='eventos-cafeteria'>
         <h2>Próximos eventos</h2>
-        <ul className="ul-no-list-style calendario-eventos">
+        <ul className="calendario-eventos">
           <li>15 de julio. Noche de Jazz: Música en vivo, mas de cuatro bandas invitadas y bebidas especiales para la ocasión.</li>
           <li>5 de agosto. Charla de Inventores: Aprende sobre los inventos más increíbles y disfruta de una cata de café exclusiva.</li>
           <li>7 de agosto. Concierto Acústico: Disfruta de la música en vivo con artistas locales.</li>
