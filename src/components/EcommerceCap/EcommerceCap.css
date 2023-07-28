@@ -17,7 +17,7 @@
   font-size: 36px;
   text-align: center;
   width: 10rem;
-  margin: 0 5px;
+  margin: auto;
 }
 .icono-toggle-navmenu .navbar-toggler-icon{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu'%3E%3Cpath d='M3 12h18M3 6h18M3 18h18'%3E%3C/path%3E%3C/svg%3E");
@@ -269,6 +269,11 @@
 }
 
 @media (max-width: 767px) {
+  .barra-navegacion-ecommerce .nav-menu{
+    align-items: flex-start;
+    width: auto;
+    margin: auto;
+  }
   .contenido-seccion-ecommerce .menu-ecommerce{
     width: 767px;
   }
@@ -277,6 +282,7 @@
   }
   .contenido-seccion-ecommerce .seccion-productos .productos {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
     overflow: hidden;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto {
@@ -294,7 +300,7 @@
     width: 120px;
     min-width: 120px;
     height: 130px;
-    margin: 25px auto;
+    margin: auto;
   }
 
   .contenido-seccion-ecommerce .seccion-productos .productos .producto .contenedor-botones-productos {
@@ -304,7 +310,7 @@
     align-items: center;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto .contenedor-botones-productos .button-action{
-    height: 4rem;
+    height: 3.5rem;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto h1 {
     margin-top: 0;
