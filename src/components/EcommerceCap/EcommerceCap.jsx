@@ -235,7 +235,7 @@ const EcommerceCap = () => {
   return (
     <main id="inicio" className="ecommerce">
       <div className="contenido-seccion-ecommerce">
-      <Navbar expand="lg" variant="dark" sticky="top"className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#EC4899', borderColor: '#A3FF91',}}>
+      <Navbar expand="lg" variant="dark" className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#EC4899', borderColor: '#A3FF91',}} sticky="top">
           <Container fluid>
             <Navbar.Brand href="#inicio">
               <img className="img-logo" src="https://i.ibb.co/SnfKPqY/12345-fotor-bg-remover-20230715232152.png" alt="logo" />
