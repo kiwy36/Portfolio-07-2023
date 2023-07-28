@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import './EcommerceCap.css';
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, doc,addDoc,writeBatch} from "firebase/firestore";
@@ -51,6 +51,8 @@ const EcommerceCap = () => {
   const [codigoSeguridad, setCodigoSeguridad] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const carritoVacio = carrito.length === 0;
+  const [menuExpandido, setMenuExpandido] = useState(false);
+  const navbarRef = useRef(null);
 
 
   const aumentarCantidad = (id) => {
@@ -192,6 +194,7 @@ const EcommerceCap = () => {
   const mostrarProductosPorCategoria = (categoria) => {
     setMostrarCarrito(false);
     setCategoriaSeleccionada(categoria);
+    cerrarMenu();
   };
   const productosFiltrados = categoriaSeleccionada === 'Todas'
     ? datosProductos
@@ -210,31 +213,49 @@ const EcommerceCap = () => {
       console.error("Error al leer el stock disponible:", error);
     }
   };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuExpandido(false);
+      }
+    };
 
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+  const cerrarMenu = () => {
+    setMenuExpandido(false);
+  };
+  const toggleMenu = () => {
+    setMenuExpandido((prevState) => !prevState);
+  };
   return (
     <main id="inicio" className="ecommerce">
       <div className="contenido-seccion-ecommerce">
-      <Navbar expand="lg" variant="dark" sticky="top" style={{ backgroundColor: '#EC4899', borderColor: '#A3FF91', }}>
+      <Navbar expand="lg" variant="dark" sticky="top"className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#EC4899', borderColor: '#A3FF91',}}>
           <Container fluid>
             <Navbar.Brand href="#inicio">
               <img className="img-logo" src="https://i.ibb.co/SnfKPqY/12345-fotor-bg-remover-20230715232152.png" alt="logo" />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarNav" className="icono-toggle-navmenu" />
-            <Navbar.Collapse id="navbarNav">
+            <Navbar.Toggle aria-controls="navbarNav" className={`icono-toggle-navmenu ${menuExpandido ? "active" : ""}`} onClick={toggleMenu} />
+            <Navbar.Collapse id="navbarNav"expanded={menuExpandido} in={menuExpandido} className="navbar-collapse">
               <Nav className="ms-auto barra-navegacion-ecommerce">
-                <Nav.Link className="nav-menu" onClick={() => mostrarProductosPorCategoria('Todas')}>
+                <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Todas'); cerrarMenu(); }}>
                   <li>Atavíos</li>
                 </Nav.Link>
-                <Nav.Link className="nav-menu" onClick={() => mostrarProductosPorCategoria('Gorras')}>
+                <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Gorras'); cerrarMenu(); }}>
                   <li>Gorras</li>
                 </Nav.Link>
-                <Nav.Link className="nav-menu" onClick={() => mostrarProductosPorCategoria('Remeras')}>
+                <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Remeras'); cerrarMenu(); }}>
                   <li>Remeras</li>
                 </Nav.Link>
-                <Nav.Link className="nav-menu" onClick={() => mostrarProductosPorCategoria('Zapatillas')}>
+                <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Zapatillas'); cerrarMenu(); }}>
                   <li>Zapatillas</li>
                 </Nav.Link>
-                <Nav.Link className="nav-menu" onClick={() => setMostrarCarrito(!mostrarCarrito)}>
+                <Nav.Link className="nav-menu" onClick={() => {setMostrarCarrito(!mostrarCarrito); cerrarMenu(); }}>
                   <li>Carrito</li>
                 </Nav.Link>
               </Nav>

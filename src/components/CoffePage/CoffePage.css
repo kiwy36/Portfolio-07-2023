@@ -99,9 +99,15 @@
   border: 2px solid aquamarine;
   border-radius: 50%;
 }
-@media (max-width: 1030px) {
+@media (max-width: 1170px) {
+  .info-cafeteria{
+    margin-bottom: 180px;
+  }
   .menu-cafeteria-productos {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .menu-cafeteria-productos .producto-imagen{
+    width: 140px;
   }
 }
 @media (max-width: 768px) {
@@ -120,9 +126,9 @@
   }
 }
 /* Estilos para la sección de menú y combos */
-@media (max-width: 1024px) {
+@media (max-width: 1170px) {
   .menu-cafeteria {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
 .menu-cafeteria h2 {

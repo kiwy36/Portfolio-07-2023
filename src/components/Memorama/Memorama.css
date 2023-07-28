@@ -82,7 +82,20 @@
   margin-bottom: 40px;
   border-radius: 8px;
 }
-
+@media(max-width: 1100px) {
+  .memorama {
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .memorama .gameData {
+    width: 100%;
+    margin: 0 5px;
+  }
+}
 @media (max-width: 768px) {
   .memorama .contenido-seccion {
     display: flex;
@@ -110,7 +123,7 @@
     max-width: calc(100% - 10px);
   }
   .memorama .card {
-    width: calc(33.3% - 10px);
+    width: calc(33% - 10px);
     height: 120px;
   }
   .memorama tr {
@@ -128,8 +141,8 @@
     margin-bottom: auto;
   }
   .memorama .card {
-    width: 80px;
-    height: 120px;
+    width: 77px;
+    height: 110px;
   }
   .memorama .memo-title,
   .memorama .memo-game,
