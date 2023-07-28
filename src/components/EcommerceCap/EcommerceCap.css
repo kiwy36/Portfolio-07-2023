@@ -281,10 +281,11 @@
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto {
     flex: 0 0 calc(50% - 20px);
-    margin: 5px;
+    margin: 3px;
     padding: 20px;
     border-radius: 8px;
     height: auto;
+    max-height: auto;
     width: 100%;
   }
 

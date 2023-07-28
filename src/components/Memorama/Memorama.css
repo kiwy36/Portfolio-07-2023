@@ -124,7 +124,8 @@
   }
   .memorama .card {
     width: calc(33% - 10px);
-    height: 120px;
+    min-width: 70px;
+    height: 110px;
   }
   .memorama tr {
     display: flex;
@@ -139,10 +140,6 @@
   .memorama h1 {
     margin-top: auto;
     margin-bottom: auto;
-  }
-  .memorama .card {
-    width: 77px;
-    height: 110px;
   }
   .memorama .memo-title,
   .memorama .memo-game,
