@@ -238,6 +238,7 @@
     margin: 5px;
     padding: 10px;
     border-radius: 8px;
+    min-height: 600px;
     height: auto;
     width: 100%;
     overflow: hidden;
