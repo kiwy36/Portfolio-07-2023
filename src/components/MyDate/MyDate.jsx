@@ -30,16 +30,16 @@ const MyDate = () => {
                             <h3>Datos personales</h3>
                             <ul>
                                 <li>
-                                    <strong>Cumpleaños:</strong> 9 de Marzo
+                                    <strong>Natalicio:</strong> 9 de Marzo
                                 </li>
                                 <li>
-                                    <strong>Numero de contacto:</strong> +542942639953
+                                    <strong>Teléfono personal:</strong> +542942639953
                                 </li>
                                 <li>
                                     <strong>Email:</strong> kevinWittner92@gmail.com
                                 </li>
                                 <li>
-                                    <strong>Lugar de residencia:</strong> Argentina, Rio Negro, S.C de Bariloche.
+                                    <strong>Nacionalidad:</strong> Argentina.
                                 </li>
                                 <li>
                                     <strong>Cargo: </strong>

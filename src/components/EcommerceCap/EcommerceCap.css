@@ -245,6 +245,7 @@
     border-radius: 8px;
     min-height: 600px;
     height: auto;
+    max-height: auto;
     width: 100%;
     overflow: hidden;
   }
@@ -260,6 +261,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1px;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto h1 {
     margin-top: 0;
@@ -315,7 +317,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos .producto .contenedor-botones-productos .button-action{
     height: 3.5rem;
