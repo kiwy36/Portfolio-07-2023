@@ -7,7 +7,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Swal from 'sweetalert2';
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyAlgztwIEMrmv59PNf5xEfDhILZzTQrakE",
   authDomain: "indumentaria-e6763.firebaseapp.com",
