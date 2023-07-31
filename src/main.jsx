@@ -11,16 +11,15 @@ import { BrowserRouter } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyAlgztwIEMrmv59PNf5xEfDhILZzTQrakE",
-  authDomain: "indumentaria-e6763.firebaseapp.com",
-  databaseURL: "https://indumentaria-e6763-default-rtdb.firebaseio.com",
-  projectId: "indumentaria-e6763",
-  storageBucket: "indumentaria-e6763.appspot.com",
-  messagingSenderId: "629294298408",
-  appId: "1:629294298408:web:70db1e4e46386d09be4c1d",
-  measurementId: "G-SP3EPGXQ65"
+  apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
+  authDomain: import.meta.env.VITE_REACT_APP_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_REACT_APP_DATABASE_URL,
+  projectId: import.meta.env.VITE_REACT_APP_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_REACT_APP_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_REACT_APP_APP_ID,
+  measurementId: import.meta.env.VITE_REACT_APP_MEASUREMENT_ID
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // eslint-disable-next-line no-unused-vars
