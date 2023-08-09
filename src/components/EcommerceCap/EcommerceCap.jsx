@@ -6,6 +6,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Swal from 'sweetalert2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping, faShirt, faHatCowboy, faSocks, faEye } from '@fortawesome/free-solid-svg-icons';
+
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
@@ -126,7 +129,7 @@ const EcommerceCap = () => {
       return;
     }
     if (!nombreComprador || !/^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$/.test(nombreComprador)) {
-      setErrorMessage("El nombre y apellido no están completados correctamente.");
+      setErrorMessage("El Apodo no está completado correctamente.");
       return;
     }
     if (!lugarEnvio || !/^[a-zA-Z0-9\s]+$/.test(lugarEnvio)) {
@@ -243,19 +246,24 @@ const EcommerceCap = () => {
             <Navbar.Collapse id="navbarNav"expanded={menuExpandido} in={menuExpandido} className="navbar-collapse">
               <Nav className="ms-auto barra-navegacion-ecommerce">
                 <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Todas'); cerrarMenu(); }}>
-                  <li>Atavíos</li>
+                  <FontAwesomeIcon icon={faEye} className="icono-nav"/>
+                  <span>Ver todo</span>
                 </Nav.Link>
                 <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Gorras'); cerrarMenu(); }}>
-                  <li>Gorras</li>
+                  <FontAwesomeIcon icon={faHatCowboy} className="icono-nav"/>
+                  <span>Gorras</span>
                 </Nav.Link>
                 <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Remeras'); cerrarMenu(); }}>
-                  <li>Remeras</li>
+                  <FontAwesomeIcon icon={faShirt} className="icono-nav"/>
+                  <span>Remeras</span>
                 </Nav.Link>
                 <Nav.Link className="nav-menu" onClick={() => {mostrarProductosPorCategoria('Zapatillas'); cerrarMenu(); }}>
-                  <li>Zapatillas</li>
+                  <FontAwesomeIcon icon={faSocks} className="icono-nav"/>
+                  <span>Calzado</span>
                 </Nav.Link>
                 <Nav.Link className="nav-menu" onClick={() => {setMostrarCarrito(!mostrarCarrito); cerrarMenu(); }}>
-                  <li>Carrito</li>
+                  <FontAwesomeIcon icon={faCartShopping} className="icono-nav"/>
+                  <span>Carrito</span>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -335,7 +343,7 @@ const EcommerceCap = () => {
                     </div>
                   {errorMessage && <h1 className="error-message">{errorMessage}</h1>}
                   <button className="button-terminarCompra" onClick={generarOrden}>Terminar Compra</button>
-                  <button className="button-terminarCompra" onClick={() => setMostrarCarrito(false)}>Seguir Comprando</button>
+                  <button className="button-seguirCompra" onClick={() => setMostrarCarrito(false)}>Seguir Comprando</button>
                 </>
               )}
             </div>

@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 
 .info-cafeteria-text {
@@ -81,6 +81,7 @@
   gap: 20px;
   padding: 20px;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 .menu-cafeteria ul.menu-cafeteria-productos,
 .menu-cafeteria ul.menu-cafeteria-combos,
@@ -136,7 +137,9 @@
   color: gold;
   margin-bottom: 20px;
 }
-
+.menu-cafeteria-combos{
+  margin-bottom: 100px;
+}
 .menu-cafeteria ul.menu-cafeteria-combos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -163,6 +166,9 @@
   }
 }
 /* Estilos para la sección de próximos eventos */
+.eventos-cafeteria{
+  margin-bottom: 50px;
+}
 .eventos-cafeteria li{
   padding: 30px;
   border: aquamarine 3px solid;
@@ -320,4 +326,8 @@
   font-size: 36px;
   text-align: center;
   margin-bottom: 20px;
+}
+.formulario-cafeteria .botton-cafe-enviar{
+  background-color: gold;
+  border: aquamarine solid 3px;
 }

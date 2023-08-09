@@ -14,10 +14,10 @@
 .barra-navegacion-ecommerce{
   margin: 10px;
 }
-.barra-navegacion-ecommerce .nav-menu li{
+.barra-navegacion-ecommerce .nav-menu .icono-nav{
   font-size: 36px;
   text-align: center;
-  width: 10rem;
+  width: 6rem;
   margin: auto;
 }
 .icono-toggle-navmenu .navbar-toggler-icon{
@@ -26,17 +26,29 @@
 .icono-toggle-navmenu .navbar-toggler {
   color: black;
 }
-.barra-navegacion-ecommerce .nav-menu{
-  display: block;
+
+.barra-navegacion-ecommerce .nav-menu {
   color: black;
-  color: #000 !important;
   font-size: 15px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px;
+  padding: auto;
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
-.barra-navegacion-ecommerce .nav-menu li:hover {
-  color: black;
-  color: #000 !important;
+
+.barra-navegacion-ecommerce .nav-menu span {
+  margin-top: 3px;
+}
+.barra-navegacion-ecommerce .nav-menu:hover {
   text-decoration: underline;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
 }
 .contenido-seccion-ecommerce .seccion-productos {
   flex-grow: 1;
@@ -199,7 +211,25 @@
   cursor: pointer;
 }
 .contenido-seccion-ecommerce .seccion-carrito .button-terminarCompra:hover {
+  background-color: #0fd5e8;
+}
+.contenido-seccion-ecommerce .seccion-carrito .button-seguirCompra{
+  background-color: white;
+  width: 49%;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border-color: black 2px solid;
+  padding: 10px 20px;
+  margin:0 2px 0 2px ;
+  border: none;
+  cursor: pointer;
+}
+.contenido-seccion-ecommerce .seccion-carrito .button-seguirCompra:hover {
   background-color: #88E358;
+  ;
 }
 .button-carrito-vacio{
   background-color: white;
@@ -227,11 +257,13 @@
     margin: 0;
   }
   .barra-navegacion-ecommerce .nav-menu {
-    width: 15%;
+    width: 100%;
+    min-height: 10vh;
+    height: auto;
     margin: auto;
   }
-  .barra-navegacion-ecommerce .nav-menu li{
-    font-size: 30px;
+  .barra-navegacion-ecommerce .nav-menu .icono-nav{
+    font-size: 42px;
     width: 8rem;
   }
   .contenido-seccion-ecommerce .seccion-productos .productos {
@@ -278,9 +310,16 @@
 
 @media (max-width: 767px) {
   .barra-navegacion-ecommerce .nav-menu{
-    align-items: flex-start;
-    width: auto;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
     margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .barra-navegacion-ecommerce .nav-menu .icono-nav{
+    font-size: 30px;
+    width: 8rem;
   }
   .contenido-seccion-ecommerce .menu-ecommerce{
     width: 767px;

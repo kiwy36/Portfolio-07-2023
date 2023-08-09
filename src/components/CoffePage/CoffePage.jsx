@@ -108,7 +108,7 @@ const CoffePage = () => {
             <input type="email" id="email" required />
             <label htmlFor="mensaje">Mensaje:</label>
             <textarea id="mensaje" placeholder='el boton de "enviar" esta desactivado, ir a la pagina principal para mandar un mensaje' rows="4" required></textarea>
-            <button type="submit" disabled>Enviar</button>
+            <button type="submit" className='botton-cafe-enviar' disabled>Enviar</button>
           </form>
           <div className="contacto-texto-poetico">
             <p >

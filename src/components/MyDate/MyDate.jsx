@@ -1,8 +1,8 @@
 import { useRef,useEffect } from 'react';
 import './MyDate.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHourglass, faEarListen, faPeopleGroup, faSchoolCircleCheck} from '@fortawesome/free-solid-svg-icons';
-import {faCss3Alt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import {faComputer, faPeopleGroup, faSchoolCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import {faWordpress, faCss3Alt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const MyDate = () => {
     const mydateRef = useRef(null);
@@ -63,16 +63,16 @@ const MyDate = () => {
                                     <FontAwesomeIcon className='icono' icon={faReact} /><span>React</span>
                                 </div>
                                 <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faHourglass} /><span>Dedicación</span>
+                                    <FontAwesomeIcon className='icono' icon={faComputer}/><span>UI/UX</span>
+                                </div>
+                                <div className='intereses'>
+                                    <FontAwesomeIcon className='icono' icon={faWordpress} /><span>Wordpress</span>
                                 </div>
                                 <div className='intereses'>
                                     <FontAwesomeIcon className='icono' icon={faSchoolCircleCheck} /><span>Investigación</span>
                                 </div>
                                 <div className='intereses'>
                                     <FontAwesomeIcon className='icono' icon={faPeopleGroup} /><span>Teamwork</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faEarListen} /><span>Aprendizaje</span>
                                 </div>
                             </div>
                         </div>
