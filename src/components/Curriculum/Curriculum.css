@@ -136,11 +136,13 @@
   .icon {
     font-size: 3rem; /* Ajustamos el tamaño del icono */
     bottom: -2rem; /* Ajustamos la posición */
+    display: none;
   }
 
   .icon-html-css {
     font-size: 3rem; /* Ajustamos el tamaño del icono */
     bottom: -2rem; /* Ajustamos la posición */
+    display: none;
   }
 
   .info-cv {
