@@ -1,87 +1,129 @@
-.sobreMi{
+/* MyDate.css */
+
+.sobreMi {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobreMi .contenido-seccion{
+
+.sobreMi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.sobreMi h2{
+
+.sobreMi h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
-}
-.sobreMi .contenido-seccion p{
-    font: 20px;
-    line-height: 22px;
-    margin-bottom: 10px;
-}
-.sobreMi .contenido-seccion p span{
     color: aquamarine;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.sobreMi .fila{
-    display: flex;
-}
-.sobreMi .fila .col
-{
-    width: 50%;
-}
-.sobreMi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
+
+.sobreMi .contenido-seccion p {
+    font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
-.sobreMi .fila .col ul{
-    list-style: none;
-}
-.sobreMi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobreMi .fila .col ul li strong{
+
+.sobreMi .contenido-seccion p span {
     color: aquamarine;
-    display: inline-block;
-    width: 130px;
-}
-.sobreMi .fila .col ul li span{
-    background-color: green;
-    border-radius: 10px;
-    padding: 4px;
     font-weight: bold;
 }
-.sobreMi .fila .col .contenedor-intereses{
+
+.sobreMi .fila {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.sobreMi .fila .col .contenedor-intereses .intereses{
-    width: 100px;
-    height: 100px;
-    background-color: #252a2e;
+
+.sobreMi .fila .col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sobreMi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 20px;
+    border-bottom: 2px solid aquamarine;
+    padding-bottom: 10px;
+    color: aquamarine;
+}
+
+.sobreMi .fila .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobreMi .fila .col ul li {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.sobreMi .fila .col ul li strong {
+    color: aquamarine;
+    display: inline-block;
+    width: 150px;
+}
+
+.sobreMi .fila .col ul li span {
+    background-color: green;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    padding: 4px 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.sobreMi .contenedor-formacion {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sobreMi .formacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: .3s;
-}.sobreMi .fila .col .contenedor-intereses .intereses:hover{
-    background-color: aquamarine;
-    color:#252a2e;
 }
-.sobreMi .fila .col .contenedor-intereses .intereses .icono{
-    font-size: 30px;
-    margin-bottom: 10px ;
+
+.sobreMi .imagen-formacion {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
+
+.sobreMi .formacion span {
+    color: aquamarine;
+    font-size: 18px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .sobreMi .fila {
         flex-direction: column;
     }
+
     .sobreMi .fila .col {
         width: 100%;
         margin-bottom: 30px;
     }
-    .sobreMi .fila .col .contenedor-intereses {
-        justify-content: center;
+
+    .sobreMi .contenedor-formacion {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobreMi .imagen-formacion {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobreMi .formacion span {
+        font-size: 16px;
     }
 }

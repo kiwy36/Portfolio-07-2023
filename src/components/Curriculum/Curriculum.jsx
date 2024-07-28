@@ -1,5 +1,8 @@
 import './Curriculum.css';
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComputer, faMicrochip, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faNodeJs, faWordpress, faCss3Alt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Curriculum = () => {
     const curriculumRef = useRef(null);
@@ -15,60 +18,90 @@ const Curriculum = () => {
         return () => {
             curriculumLink.removeEventListener('click', handleScroll);
         };
-        }, []);
+    }, []);
+
     return (
         <section id='curriculum' className='curriculum' ref={curriculumRef}>
             <div className='contenido-seccion'>
-                <h1 className='title-cv'>Curriculum</h1>
-                <div className='grid-container'>
-                    <div className='grid-item'>
-                    <h1 className='title-area'>Conocimientos</h1>
-                    <div className='item'>
-                        <h1 className='title-item'>Desarrollo web en <br/>CoderHouse 2022-2023</h1>
+                <h1 className='title-cv'>Mis Skills de Programación</h1>
+                <div className='flex-container'>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>HTML & CSS</h1>
                         <p className='info-cv'>
-                            Finalicé la Carrera de Desarrollo Frontend con React, adquiriendo habilidades en HTML, CSS y JavaScript para estructurar, estilizar e interactuar con páginas web. También me enfoqué en React, creando componentes modulares para una arquitectura más escalable.
+                            Habilidades en maquetación web, creación de estructuras semánticas y diseño responsivo utilizando HTML5 y CSS3.
                         </p>
-                        <img className='imagen-item-cv' src='https://i.ibb.co/GkWD6xf/coder.jpg' alt='coderlogo'/>
-                    </div>
-                        <div className='item'>
-                            <h1 className='title-item'>Autodidacta<br/>2022-2023</h1>
-                            <p className='info-cv'>
-                                Tengo conocimiento en manejo de librerías y utilización de
-                                IA. Manejo el inglés técnico pero poco a nivel conversación.
-                                Además, tengo experiencia en el diseño UX/UI en niveles
-                                iniciales. Mi potencial está en constante
-                                crecimiento.
-                            </p>
-                            <img className='imagen-item-cv' src='https://i.ibb.co/JHT6gJr/sause.jpg' alt='arbol'/>
+                        <div className='icon-container-htmlcss'>
+                            <FontAwesomeIcon icon={faHtml5} className='icon-html-css' />
+                            <FontAwesomeIcon icon={faCss3Alt} className='icon-html-css' />
                         </div>
                     </div>
-                    <div className='grid-item'>
-                    <h1  className='title-area'>Experiencia</h1>
-                        <div className='item'>
-                            <h1 className='title-item'>Atención al cliente<br/>2015-2023</h1>
-                            <p className='info-cv'>
-                                Trabajé en un kiosco donde me encargaba de la recepción de
-                                clientes, el manejo de caja y la reposición de mercadería.
-                                Durante mi tiempo allí, aprendí a trabajar en equipo y a
-                                brindar un servicio al cliente excepcional.
-                            </p>
-                            <img className='imagen-item-cv' src='https://i.ibb.co/Fs8JD0Q/kiosco.png' alt='kiosko'/>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>JavaScript</h1>
+                        <p className='info-cv'>
+                            Experiencia en la programación con JavaScript para crear interactividad en sitios web, utilizando ES6+.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faJs} className='icon' />
                         </div>
-                        <div className='item'>
-                            <h1 className='title-item'>Independiente<br/>2023-2023</h1>
-                            <p className='info-cv'>
-                                Mis proyectos anteriores comprenden galerías, ecommerce y
-                                mini juegos, todos ellos desarrollados durante mi etapa
-                                estudiantil. Próximamente, en la sección de proyectos,
-                                compartiré más información sobre ellos.
-                            </p>
-                            <img className='imagen-item-cv' src='https://i.ibb.co/h7dZhVz/pccodi.pngpe' alt='archivos'/>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>React</h1>
+                        <p className='info-cv'>
+                            Desarrollo de aplicaciones web dinámicas y SPA con React, incluyendo el manejo de estado y efectos.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faReact} className='icon' />
+                        </div>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>Inteligencia Artificial</h1>
+                        <p className='info-cv'>
+                            Introducción a conceptos básicos de IA, incluyendo aprendizaje automático y procesamiento del lenguaje natural.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faMicrochip} className='icon' />
+                        </div>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>Node.js</h1>
+                        <p className='info-cv'>
+                            Creación de servidores y APIs RESTful utilizando Node.js y Express, incluyendo la gestión de rutas y middleware.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faNodeJs} className='icon'  />
+                        </div>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>Bases de Datos</h1>
+                        <p className='info-cv'>
+                            Conocimientos en MySQL para el diseño, creación y gestión de bases de datos relacionales. Actualmente, estoy desarrollando mis habilidades.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faDatabase} className='icon' />
+                        </div>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>Diseño UI/UX</h1>
+                        <p className='info-cv'>
+                            Experiencia en el diseño de interfaces de usuario intuitivas y atractivas, y en la creación de experiencias de usuario optimizadas.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faComputer} className='icon' />
+                        </div>
+                    </div>
+                    <div className='flex-item'>
+                        <h1 className='title-item'>WordPress</h1>
+                        <p className='info-cv'>
+                            Desarrollo y gestión de sitios web con WordPress, incluyendo la personalización de temas y plugins.
+                        </p>
+                        <div className='icon-container'>
+                            <FontAwesomeIcon icon={faWordpress} className='icon' />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Curriculum
+export default Curriculum;

@@ -1,8 +1,5 @@
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import './MyDate.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faComputer, faPeopleGroup, faSchoolCircleCheck} from '@fortawesome/free-solid-svg-icons';
-import {faWordpress, faCss3Alt, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 const MyDate = () => {
     const mydateRef = useRef(null);
@@ -21,16 +18,16 @@ const MyDate = () => {
         }, []);
     return (
         <>
-            <section id='sobreMi' className='sobreMi'ref={mydateRef}>
+            <section id='sobreMi' className='sobreMi' ref={mydateRef}>
                 <div className='contenido-seccion'>
                     <h2>Sobre mi</h2>
-                    <p><span>Hola, soy Kevin</span>, soy una persona comprometida con la investigación y la expansión de mis conocimientos. Disfruto de la lectura de novelas de policiales, suspenso, ciencia ficción y fantasía. Además, encuentro inspiración en la fotografía de paisajes y las caminatas por la naturaleza. Me divierto jugando, escuchando música y explorando series y películas de diferentes géneros. También tengo habilidades en el arte del origami. En resumen, soy un individuo dedicado a la exploración intelectual y a la apreciación de diversas formas de entretenimiento y expresión artística.</p>
+                    <p><span>Hola, </span>soy Kevin, mi aventura en el mundo de la programación comenzó en Coderhouse, donde empecé aprendiendo HTML y he avanzado hasta React. Mi curiosidad y pasión por la tecnología me llevaron a convertirme en autodidacta, ampliando mis conocimientos y habilidades a mi propio ritmo. Actualmente, estoy profundizando en el desarrollo Backend en el Campus Virtual de Codo a Codo, donde continúo desafiándome y creciendo profesionalmente. Soy una persona motivada por el aprendizaje continuo y siempre en busca de nuevos retos y oportunidades para expandir mis capacidades en el campo de la programación.</p>
                     <div className='fila'>
                         <div className='col'>
                             <h3>Datos personales</h3>
                             <ul>
                                 <li>
-                                    <strong>Natalicio:</strong> 9 de Marzo
+                                    <strong>Github:</strong> kiwy36
                                 </li>
                                 <li>
                                     <strong>Teléfono personal:</strong> +542942639953
@@ -42,37 +39,25 @@ const MyDate = () => {
                                     <strong>Nacionalidad:</strong> Argentina.
                                 </li>
                                 <li>
-                                    <strong>Cargo: </strong>
-                                    <span>FREELANCE</span>
+                                    <strong>Categoría: </strong>
+                                    <span>Junior Developer</span>
                                 </li>
                             </ul>
                         </div>
                         <div className='col'>
-                            <h3>Mis Habilidades</h3>
-                            <div className='contenedor-intereses'>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faHtml5}/><span>Html</span>
+                            <h3>Lugares de Formación</h3>
+                            <div className='contenedor-formacion'>
+                                <div className='formacion'>
+                                    <img src='https://styles.redditmedia.com/t5_5blkvq/styles/communityIcon_t5ji6wuld2z71.jpg?format=pjpg&s=1672be49333cd14749784be8bbc3c968a033d8e0' alt='Coderhouse' className='imagen-formacion'/>
+                                    <span>Coderhouse</span>
                                 </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faCss3Alt} /><span>Css</span>
+                                <div className='formacion'>
+                                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNYTD_c3R-RiaovcMfyILWQy8UN36uPtECbiCJGQcGWGPZDhDCC8OFrDxf0-1HmPwSBm0&usqp=CAU' alt='Codo a Codo' className='imagen-formacion'/>
+                                    <span>Codo a Codo</span>
                                 </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faJs} /><span>Javascript</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faReact} /><span>React</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faComputer}/><span>UI/UX</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faWordpress} /><span>Wordpress</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faSchoolCircleCheck} /><span>Investigación</span>
-                                </div>
-                                <div className='intereses'>
-                                    <FontAwesomeIcon className='icono' icon={faPeopleGroup} /><span>Teamwork</span>
+                                <div className='formacion'>
+                                    <img src='https://i.ibb.co/YdyG5Hy/aut.jpg' alt='Autodidacta' className='imagen-formacion'/>
+                                    <span>Autodidacta</span>
                                 </div>
                             </div>
                         </div>
@@ -83,4 +68,4 @@ const MyDate = () => {
     )
 }
 
-export default MyDate
+export default MyDate;

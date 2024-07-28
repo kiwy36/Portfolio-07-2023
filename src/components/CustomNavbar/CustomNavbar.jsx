@@ -16,14 +16,14 @@ function CustomNavbar() {
                 <li className="link">Sobre mi</li>
               </Nav.Link>
               <Nav.Link id="curriculum-link" onClick={() => {}}>
-                <li className="link">Curriculum</li>
+                <li className="link">Skills</li>
               </Nav.Link>
               <Nav.Link id="proyec-link" onClick={() => {}}>
                 <li className="link">Proyectos</li>
               </Nav.Link>
-              <Nav.Link  id="contacto-link" onClick={() => {}}>
+              {/* <Nav.Link id="contacto-link" onClick={() => {}}>
                 <li className="link">Contacto</li>
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

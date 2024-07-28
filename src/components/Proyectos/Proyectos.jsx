@@ -22,7 +22,7 @@ const Proyectos = () => {
                 <h2>Proyectos</h2>
                 <div className='galeria'>
                     <div className='proyecto'>
-                        <img src='https://i.ibb.co/kgQ4fXq/memorama.png'alt='dino-memo'/>
+                        <img src='https://i.ibb.co/kgQ4fXq/memorama.png'alt='dino-memo' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Memorama Saurio</h3>
                             <p>Gana el juego en menos de 100 movimientos y 120 segundos!!!</p>
@@ -30,7 +30,7 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
-                        <img src='https://i.ibb.co/ssfsG64/dino-duelo.png'alt='dino-cards'/>
+                        <img src='https://i.ibb.co/ssfsG64/dino-duelo.png'alt='dino-cards' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Dino Duelo</h3>
                             <p>Juego de cartas donde competiras contra la pc para ver quien tiene mas puntos</p>
@@ -38,7 +38,7 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
-                        <img src='https://i.ibb.co/3T4t0Y1/ecommerce.png'alt='tienda'/>
+                        <img src='https://i.ibb.co/3T4t0Y1/ecommerce.png'alt='tienda' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Tienda de Indumentaria</h3>
                             <p>Simulador de tienda de compras interactiva</p>
@@ -46,11 +46,35 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
-                        <img src='https://i.ibb.co/4RJBtNb/cafestore.png'alt='bannercafe'/>
+                        <img src='https://i.ibb.co/4RJBtNb/cafestore.png'alt='bannercafe' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Cafeteria Steampunk</h3>
                             <p>Simulador de la pagina publicitaria de una cafeteria</p>
                             <Link className='start-button' target="_blank" rel="noreferrer" to='/Coffepage'>Ver</Link>
+                        </div>
+                    </div>
+                    <div className='proyecto'>
+                        <img src='https://i.ibb.co/dryS6Gw/libreria.png' alt='libreria banner' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>Librería de Elementos</h3>
+                            <p>Ejemplos, Detalles e Instrucciones</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://bookshop-teal.vercel.app/'>Ver</Link>
+                        </div>
+                    </div>
+                    <div className='proyecto'>
+                        <img src='https://i.ibb.co/xgCkrX2/allsports.png' alt='tienda banner' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>All SPORT STORE</h3>
+                            <p>Simulador de una tienda de ropa</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://ca-c-r-b.vercel.app/'>Ver</Link>
+                        </div>
+                    </div>
+                    <div className='proyecto'>
+                        <img src='https://i.ibb.co/zQSmVqz/sql.png' alt='tienda sql' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>Tienda simulator a base de SQL</h3>
+                            <p>Proyecto en vías de desarrollo</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://ca-c-backend.vercel.app/index.html'>Ver</Link>
                         </div>
                     </div>
                 </div>

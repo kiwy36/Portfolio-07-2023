@@ -1,4 +1,4 @@
-import './Inbox.css';
+/*import './Inbox.css';
 import { useRef,useEffect,useState} from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -71,4 +71,4 @@ const Inbox = () => {
     )
 }
 
-export default Inbox
+export default Inbox*/
