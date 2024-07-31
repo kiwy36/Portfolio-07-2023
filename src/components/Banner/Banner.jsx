@@ -24,7 +24,7 @@ const Banner = () => {
             <section id='inicio'  className='inicio'ref={bannerRef}>
                 <div className='contenido-banner'>
                     <div className='contenedor-img'>
-                        <img src="https://i.ibb.co/RDrMSH6/banner-Img.png" alt='imgportada' loading="lazy" />
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczNU_AaWZZs-AAbLTLDkTO-ClwQ4i6ZEAUP0K-c2L4pXH3ohAJ_XrBqzU_qJ6gQlJsHdeX5Vg7tcnCHojbnyb2jIlpGPNFL6xyMP__MarKA0T2y87VCN7ZcwsTpbbv-FUI7BbDjjqlCuxTBJM1ZuWK_Gpw=w612-h612-s-no?authuser=0" alt='imgportada' loading="lazy" />
                     </div>
                     <h1>WITTNER KEVIN</h1>
                     <h2>Desarrollador Front-end</h2>
