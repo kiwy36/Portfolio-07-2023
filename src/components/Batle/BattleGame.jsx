@@ -33,18 +33,18 @@ const BattleGame = () => {
     { id: 7, rule: 'Regla siete', details: 'Gana el jugador con mas puntos.' }
   ];
   const choices = [
-    { id: 'abc123', name: 'MOSASAURUS', atk: 4, def: 2, image: 'https://i.ibb.co/Vt8ymRt/dino-00.jpg' },
-    { id: 'def456', name: 'ALLOSAURUS', atk: 3, def: 2, image: 'https://i.ibb.co/0BPY8j1/dino-03.jpg' },
-    { id: 'ghi789', name: 'VELOCIRAPTORCITO', atk: 2, def: 2, image: 'https://i.ibb.co/52D1jNj/dino-04.jpg' },
-    { id: 'jkl012', name: 'ATROCIRAPTOR', atk: 2, def: 3, image: 'https://i.ibb.co/nCJWkFn/dino-06.jpg' },
-    { id: 'mno345', name: 'PYRORAPTOR', atk: 2, def: 4, image: 'https://i.ibb.co/9TDpp5H/dino-07.jpg' },
-    { id: 'pqr678', name: 'TRICERATOPS', atk: 3, def: 3, image: 'https://i.ibb.co/nw97v1C/dino-02.jpg' },
-    { id: 'stu901', name: 'SAURÓPODO', atk: 1, def: 4, image: 'https://i.ibb.co/4wyV7yZ/dino-05.jpg' },
-    { id: 'vwx234', name: 'VELOCIRAPTOR', atk: 3, def: 2, image: 'https://i.ibb.co/LJVSrGC/dino-01.jpg' },
-    { id: 'yz0123', name: 'TIRANOSSAURO', atk: 4, def: 2, image: 'https://i.ibb.co/TqQF1kk/dino-09.jpg' },
-    { id: '456abc', name: 'THERIZINOSAURUS', atk: 2, def: 4, image: 'https://i.ibb.co/JpLP4cb/dino-08.jpg' },
-    { id: '789def', name: 'OVIRAPTOR', atk: 2, def: 2, image: 'https://i.ibb.co/sKnyTtn/dino-11.jpg' },
-    { id: '012ghi', name: 'MICRORAPTOR', atk: 2, def: 4, image: 'https://i.ibb.co/bQ9n3J7/dino-12.jpg' }
+    { id: 'abc123', name: 'MOSASAURUS', atk: 4, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczNPJSS0lwW2Uj_Ehr7SpGH59c0VkVH30S6E9rtMaB-VltOM6c21WjQvK936yuPPRFofY6ZWrsznuPWr7nDSU0npngBOR6evAg3uzL_ChUjhl-_Fgljc5TjN4DJxL6dtQ0iQ2NGxjXK0y8cQaZJzm9WPtg=w348-h618-s-no?authuser=0' },
+    { id: 'def456', name: 'ALLOSAURUS', atk: 3, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczOXqiblXXpaSkmDNt5AzaInpy4P5OJceVgtKzx7rjbWmHAYGbW0YNIAe7Jh_VBDce4hBRYOvI_dbaqmH8uIWdmeemRN-jaFH_6BD3D6CRZ6EK9WmS6nbl4NhP9Vt9BYM5lnjo1QMiXjpJ-CuDodqPML-w=w309-h618-s-no?authuser=0' },
+    { id: 'ghi789', name: 'VELOCIRAPTORCITO', atk: 2, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczO8uNg7ahEvzN239TUge66qanr6-qLwxDthMCiS5KpSmIu1unrrELuE189aMLSAavNBQ3prULq30-DpHKT4DjWaqkxVEwmEmhhpn7s9Cp5MpyxxqObe0uqlU7lbmgPV7BNI0dHBGz8sQAeHQS6NJOCeEQ=w413-h618-s-no?authuser=0' },
+    { id: 'jkl012', name: 'ATROCIRAPTOR', atk: 2, def: 3, image: 'https://lh3.googleusercontent.com/pw/AP1GczO2zRM8lJeqHiVaVBUG4g4-45Y2J4UxqVGT9tVwWVmnkhrh6Gkez1wKqqhaPBtOAOTZiTjJyXVhCIBm6CGi0ayzyU0O0w75mvLU2eFVFWUynGMFulEIjpfw5JK8_DZdSpX4ZWjjNxVoa8ytNe_VHzCaZA=w348-h618-s-no?authuser=0' },
+    { id: 'mno345', name: 'PYRORAPTOR', atk: 2, def: 4, image: 'https://lh3.googleusercontent.com/pw/AP1GczMt_dDeXv7kOcmIucF132Hezxe41efE-zd5lY4R202HELeGT-mHYaF2AGoGp5r23PwpJVic4Q2VGR5n-SodGU_iTUPQeXF1OMp-epzsKEzjRKrbrD18hkQOTLrWJxm52Y6Rn4PsqsaHyviRl2scwRtY5g=w347-h618-s-no?authuser=0' },
+    { id: 'pqr678', name: 'TRICERATOPS', atk: 3, def: 3, image: 'https://lh3.googleusercontent.com/pw/AP1GczM2JwghpPDJfnEiCzlbqMdb09j-Eh9f4ekfofyqgUGRUJEYqhicTiUFG_k2_rgB-MM0cJp3zAjolpLYUG7mA9jJfD48-IaiV9AgFPV1xBjgERZrtSevl_80UHChWBrGSQSREa8R1ciYBnl01Hb1kXUAUw=w348-h618-s-no?authuser=0' },
+    { id: 'stu901', name: 'SAURÓPODO', atk: 1, def: 4, image: 'https://lh3.googleusercontent.com/pw/AP1GczMwfx8Ia3l7xdfpnZuK6TVCuZ89K4MZ1c0lSa_FYAfUvjuibxHq36VnXXTK4CQoEFlqQqxJG_Dot55iacemnLJWaxOa4jUkJ_nrx9cOtGcAO3nlR5JW58oyI03XbZKYBHGIV2Nrn_vfSpsKbvnDgGyi3Q=w406-h618-s-no?authuser=0' },
+    { id: 'vwx234', name: 'VELOCIRAPTOR', atk: 3, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczMOU5FMUBDV_YeIEMQIsKMLzp6QG7rEf270zYNDzjGV8c53HzDzs2PGBkkvpxhMgrDCX9QXL5wfwepg29ES5lQ9RKYgMW45d-P-JDEcVcptifas_BXW9CYYhEa6uRo9hXVsBAm9zYT9Ctp3M9fMs-JtYw=w349-h618-s-no?authuser=0' },
+    { id: 'yz0123', name: 'TIRANOSSAURO', atk: 4, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczOTMOYMSKFl0rs_D8CIoVVC85wxVaHdBj32B6W1kVw8AJnWg-ovoBSBXmlbOOBuGV5jZ6bOdZwE1tLFRROjDt5apwlBJ4fLIEDoteCDDTeA5_A4jx6P9cDjXIUHT-ADf4-JmuQATk0r-k9KQlWZKsv2VA=w348-h618-s-no?authuser=0' },
+    { id: '456abc', name: 'THERIZINOSAURUS', atk: 2, def: 4, image: 'https://lh3.googleusercontent.com/pw/AP1GczNc0dzMZ6QbxtlDWmfXmOVrLs2dRj4h4glxJE0-K_wcnXrJX9SOQR90JYH_3o8RHl6rIdz3f3XlRrC6pr8uYVMh2JLJGwI1wBYMU7GeuEswFFqALdMMoagTlppDRj_fPrDa8IMJ6wA6jtEQlhpZ_pug0Q=w347-h618-s-no?authuser=0' },
+    { id: '789def', name: 'OVIRAPTOR', atk: 2, def: 2, image: 'https://lh3.googleusercontent.com/pw/AP1GczM3MytyH9OZEYw1bA2Kd8MwLTymj1OBadkbOwUDuUNZv3ZY2yYKG29YSAKiD0TTolai2sLEcDIIPpl2RsxVNmDr0X-s72_oB9ytY1LWaJPT_VhE5Jrj6vUs_Q3VNS22PcJgV8pjdjMon7N4gI-qKsWRvg=w453-h618-s-no?authuser=0' },
+    { id: '012ghi', name: 'MICRORAPTOR', atk: 2, def: 4, image: 'https://lh3.googleusercontent.com/pw/AP1GczMAc1q3sQVhqaqCq6p2mzEdGxi44W0hC8wnC2lJtJq4t1e5xQKiujO_joO6GeZymjblYF26vzLaU8n6cxhiN0HqJhrc4KB884KSsAo1Y6y7MDtU08UnkXSOj_diyfatG9Ugkn3imMaeOux46PoMomuwNw=w376-h618-s-no?authuser=0' }
   ];
   useEffect(() => {
     if (round > 0) {

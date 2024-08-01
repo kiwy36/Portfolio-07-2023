@@ -237,10 +237,10 @@ const EcommerceCap = () => {
   return (
     <main id="inicio" className="ecommerce">
       <div className="contenido-seccion-ecommerce">
-      <Navbar expand="lg" variant="dark" className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#EC4899', borderColor: '#A3FF91',}} sticky="top">
+      <Navbar expand="lg" variant="dark" className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#FFF',}} sticky="top">
           <Container fluid>
             <Navbar.Brand href="#inicio">
-              <img className="img-logo" src="https://i.ibb.co/SnfKPqY/12345-fotor-bg-remover-20230715232152.png" alt="logo" />
+              <img className="img-logo" src="https://lh3.googleusercontent.com/pw/AP1GczPL74zS9TYgNemT1wmuzXAHLl9TbyxecwhUcAFSwd1tOTxNM01qP8N7VK9CqDI-18lga8HpfjP_KZ6nuQSU3UbeLLvq_WCtT7FLvJZ3_DVsYIipaM6uNeWYiIcsH12Z09-dj8cn6pAZ2Uhr3QRRMsSzBg=w500-h396-s-no?authuser=0" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarNav" className={`icono-toggle-navmenu ${menuExpandido ? "active" : ""}`} onClick={toggleMenu} />
             <Navbar.Collapse id="navbarNav"expanded={menuExpandido} in={menuExpandido} className="navbar-collapse">
@@ -277,7 +277,7 @@ const EcommerceCap = () => {
                 <img className="img-indumentaria" src={producto.image} alt={producto.name} />
                 <p>Precio: ${producto.price} kiwy pesos</p>
                 <p>Cantidad: {producto.stock}</p>
-                <p>Cantidad seleccionada: {cantidadesSeleccionadas[producto.id] || 0}</p>
+                <p>Al carrito: {cantidadesSeleccionadas[producto.id] || 0}</p>
                 <div className="contenedor-botones-productos">
                   <button className="button-action" onClick={() => aumentarCantidad(producto.id)}>Agregar</button>
                   <button className="button-action" onClick={() => reducirCantidad(producto.id)}>Quitar</button>

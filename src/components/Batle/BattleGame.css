@@ -1,232 +1,235 @@
-.batlegame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #141514;
-  color: #fff;
-  padding: 10px 0px 30px 0;
-  margin: 0;
-  min-height: 100vh;
-  height: auto;
-}
-.batlegame .contenido-seccion {
-  max-width: 1100px;
-  margin: 0;
-}
-
-.batlegame .contenido-seccion .titulo {
-  font-size: 80px;
-}
-.batlegame h2 {
-  font-size: 20px;
-  font-family: 'Righteous';
-}
-
-.batlegame h1 {
-  font-size: 50px;
-  font-family: 'Righteous';
-  text-align: center;
-  color: aquamarine;
-  text-align: center;
-}
-
-.batlegame .computadora h1 {
-  color: red;
-}
-
-.batlegame .contenido-seccion .cartaDino {
-  justify-content: center;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.batlegame .contenido-seccion .cartaDino button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 5px aquamarine solid;
-  background: black;
-  cursor: pointer;
-  margin: 5px;
-  width: calc(33% - 10px);
-  min-width: calc(33% - 10px);
-  height: auto;
-  max-height: 250px;
-  min-height: 300px;
-  justify-content: center;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.batlegame .contenido-seccion .cartaDino button img {
-  width: 100%;
-  height: 200px;
-  margin: 1px;
-}
-.batlegame .contenido-seccion .computadora .cartaDino button {
-  border-color: red;
-}
-
-.batlegame .contenido-seccion .cartaDino button .data-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.batlegame .contenido-seccion .cartaDino button .data-card p {
-  margin-bottom: 2px;
-  color: #fff;
-  text-align: center;
-  font-size: 15px;
-}
-
-.batlegame .contenido-seccion .iniciar-juego {
-  display: block;
-  border: 2px solid aquamarine;
-  margin: 0 auto;
-  font-size: 24px;
-  padding: 10px 20px;
-  background-color: #121212;
-  color: #fff;
-  border-radius: 8px;
-  transition: background-color 2s, color 2s;
-}
-
-.batlegame .contenido-seccion .iniciar-juego:hover {
-  background-color: aquamarine;
-  color: #000;
-}
-
-.batlegame .cartaDino button div {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.batlegame .contenido-seccion .cartaDino button {
-  width: 100%;
-}
-
-.batlegame .contenedor-jugadores {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.batlegame .contenido-seccion .jugador,
-.batlegame .contenido-seccion .computadora {
-  width: calc(50% - 20px);
-  max-width: calc(50% - 20px);
-  min-width: calc(50% - 20px);
-  margin-bottom: 20px;
-}
-
-
-.batlegame .contenido-seccion .cartaDino button[disabled] img,
-.batlegame .contenido-seccion .cartaDino button[disabled] div {
-  opacity: 0 ;
-}
-
-.batlegame .contenido-seccion .cartaDino button,
-.batlegame .contenido-seccion .jugador .cartaDino,
-.batlegame .contenido-seccion .computadora .cartaDino {
-  flex: 0 0 calc(33.33% - 6px);
-  margin: 3px;
-}
-
-.batlegame .contenedor-infoGame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: 2px solid aquamarine;
-  border-radius: 8px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.batlegame .reiniciar-juego {
-  display: block ;
-  border: 2px solid aquamarine;
-  margin: 0 auto;
-  font-size: 24px;
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 8px;
-  transition: background-color 2s, color 2s;
-  margin: 10px;
-}
-
-.batlegame .reiniciar-juego:hover {
-  background-color: aquamarine;
-  color: #000;
-}
-
-.batlegame .reglas {
-  min-height: auto;
-  max-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.batlegame .reglas h2 {
-  font-size: 30px;
-  text-align: center;
-  color: aquamarine;
-  padding: 5px;
-}
-.batlegame .reglas ul {
-  padding-left: 0;
-  list-style: none;
-}
-.batlegame .reglas li {
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-.batlegame .reglas li strong{
-  color: aquamarine;
-}
-@media screen and (max-width: 768px) {
-  .batlegame .reglas {
-    max-height: none;
+  .batlegame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141514;
+    color: #fff;
+    padding: 10px 0px 30px 0;
+    margin: 0;
+    min-height: 100vh;
     height: auto;
+  }
+  .batlegame .contenido-seccion {
+    max-width: 1100px;
+    margin: 0;
+  }
+
+  .batlegame .contenido-seccion .titulo {
+    font-size: 80px;
+  }
+  .batlegame h2 {
+    font-size: 20px;
+    font-family: 'Righteous';
+  }
+
+  .batlegame h1 {
+    font-size: 50px;
+    font-family: 'Righteous';
+    text-align: center;
+    color: aquamarine;
+    text-align: center;
+  }
+
+  .batlegame .computadora h1 {
+    color: red;
+  }
+
+  .batlegame .contenido-seccion .cartaDino {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .batlegame .contenido-seccion .cartaDino button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px aquamarine solid;
+    background: rgb(37, 83, 11);
+    cursor: pointer;
+    margin: 0px;
+    width: calc(33% - 10px);
+    min-width: calc(33% - 10px);
+    max-height: 250px;
+    min-height: 250px;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .batlegame .contenido-seccion .cartaDino button:hover {
+    transform: scale(1.05); /* Escala ligeramente la carta en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Agrega sombra al hacer hover */
+  }
+
+  .batlegame .contenido-seccion .cartaDino button img {
+    width: 100%;
+    height: 180px;
+  }
+  .batlegame .contenido-seccion .computadora .cartaDino button {
+    border-color: red;
+  }
+
+  .batlegame .contenido-seccion .cartaDino button .data-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .batlegame .contenido-seccion .cartaDino button .data-card p {
+    margin-bottom: 2px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .batlegame .contenido-seccion .iniciar-juego {
+    display: block;
+    border: 2px solid aquamarine;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 2s, color 2s;
+  }
+
+  .batlegame .contenido-seccion .iniciar-juego:hover {
+    background-color: aquamarine;
+    color: #000;
+  }
+
+  .batlegame .cartaDino button div {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .batlegame .contenido-seccion .cartaDino button {
+    width: 100%;
+  }
+
+  .batlegame .contenedor-jugadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .batlegame .contenido-seccion .jugador,
+  .batlegame .contenido-seccion .computadora {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+
+
+  .batlegame .contenido-seccion .cartaDino button[disabled] img,
+  .batlegame .contenido-seccion .cartaDino button[disabled] div {
+    opacity: 0 ;
+  }
+
+  .batlegame .contenido-seccion .cartaDino button,
+  .batlegame .contenido-seccion .jugador .cartaDino,
+  .batlegame .contenido-seccion .computadora .cartaDino {
+    flex: 0 0 calc(33.33% - 6px);
+    margin: 3px;
+  }
+
+  .batlegame .contenedor-infoGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .batlegame .reiniciar-juego {
+    display: block ;
+    border: 2px solid aquamarine;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 2s, color 2s;
+    margin: 10px;
+  }
+
+  .batlegame .reiniciar-juego:hover {
+    background-color: aquamarine;
+    color: #000;
+  }
+
+  .batlegame .reglas {
+    min-height: auto;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
   }
   .batlegame .reglas h2 {
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
+    color: aquamarine;
+    padding: 5px;
+  }
+  .batlegame .reglas ul {
+    padding-left: 0;
+    list-style: none;
   }
   .batlegame .reglas li {
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 25px;
   }
-}
-/**/
-@media screen and (max-width: 768px) {
-  .batlegame .contenedor-jugadores {
-    flex-direction: column;
-    align-items: center;
+  .batlegame .reglas li strong{
+    color: aquamarine;
   }
-  .batlegame .contenido-seccion .jugador,
-  .batlegame .contenido-seccion .computadora {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+  @media screen and (max-width: 768px) {
+    .batlegame .reglas {
+      max-height: none;
+      height: auto;
+      padding: 20px;
+    }
+    .batlegame .reglas h2 {
+      font-size: 24px;
+    }
+    .batlegame .reglas li {
+      font-size: 18px;
+    }
   }
-  .batlegame .contenido-seccion .cartaDino button .data-card p {
-    font-size: 16px;
+  /**/
+  @media screen and (max-width: 768px) {
+    .batlegame .contenedor-jugadores {
+      flex-direction: column;
+      align-items: center;
+    }
+    .batlegame .contenido-seccion .jugador,
+    .batlegame .contenido-seccion .computadora {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .batlegame .contenido-seccion .cartaDino button .data-card p {
+      font-size: 16px;
+    }
+    .batlegame .contenedor-infoGame{
+      flex-direction: column;
+      justify-content:center;
+    }
   }
-  .batlegame .contenedor-infoGame{
-    flex-direction: column;
-    justify-content:center;
-  }
-}

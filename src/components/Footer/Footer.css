@@ -1,5 +1,6 @@
 footer {
     width: 100%;
+    min-width: 100%;
     background-color: #252a2e;
     color: #fff;
     text-align: center;
@@ -29,29 +30,4 @@ footer .redes a:hover {
     background-color: #FFD700; /* Fondo dorado al pasar el ratón */
     border-color: #FFD700; /* Borde dorado al pasar el ratón */
     color: #252a2e; /* Color del icono en fondo dorado */
-}
-
-footer .arriba {
-    display: block;
-    width: 50px; /* Aumenta el tamaño del botón */
-    height: 50px;
-    background-color: aquamarine; /* Color de fondo del botón */
-    text-decoration: none;
-    color: #252a2e; /* Color del texto del botón */
-    border: 2px solid #FFD700; /* Borde dorado */
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -30px; /* Ajusta la posición del botón */
-    font-size: 28px;
-    line-height: 50px; /* Alinea el texto verticalmente */
-    transition: background-color 0.3s, color 0.3s; /* Agrega transición para el hover */
-}
-
-footer .arriba:hover {
-    color: aquamarine; /* Cambia el color del texto al pasar el ratón */
-    background-color: #252a2e; /* Cambia el fondo del botón al pasar el ratón */
-    border-color: aquamarine; /* Cambia el borde al pasar el ratón */
 }
