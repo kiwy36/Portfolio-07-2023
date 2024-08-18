@@ -230,145 +230,91 @@
 
 
 /* Media Queries */
+/* Estilos para celulares (hasta 767px) */
+@media (max-width: 767px) {
+  /* Estilos generales */
+  .contenedor-general-cafe {
+    padding: 10px; /* Menos padding en el contenedor general */
+    overflow: hidden;
+  }
 
-/* General */
-@media (max-width: 1170px) {
+  .contenedor-cafeteria {
+    padding: 10px; /* Menos padding en el contenedor de cafetería */
+    border-width: 3px; /* Borde más delgado */
+  }
+
+  /* Portada */
+  .contenido-portada {
+    padding: 20px; /* Menos padding */
+    border-width: 3px; /* Borde más delgado */
+  }
+
+  .contenido-portada h1 {
+    font-size: 2em; /* Tamaño de fuente más pequeño */
+  }
+
+  .contenido-portada p {
+    font-size: 1.2em; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Sección "Acerca de El Taller del Café Aller" */
   .info-cafeteria {
-    margin-bottom: 180px;
-  }
-
-  .menu-cafeteria-productos {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .menu-cafeteria-productos .producto-imagen {
-    width: 140px;
-  }
-
-  .menu-cafeteria {
-    margin-top: 150px;
-  }
-}
-
-/* Mobile (868px and below) */
-@media (max-width: 768px) {
-  .info-cafeteria {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Cambia a columna en lugar de fila */
+    align-items: flex-start; /* Alineación a la izquierda */
+    margin-bottom: 50px; /* Menos margen en la parte inferior */
   }
 
   .info-cafeteria-text {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    margin-bottom: 20px; /* Margen inferior */
   }
 
+  .subtitle-cafeteria {
+    font-size: 1.2em; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Carrusel */
   .carousel-container {
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-    width: 100%;
-    margin-top: 2px;
+    max-width: 100%; /* Ancho completo */
+    padding: 5px; /* Menos padding */
   }
 
-  .carousel .slide {
-    max-height: 400px;
-  }
-
+  /* Lista de productos */
   .menu-cafeteria-productos {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    padding: 20px;
-    overflow: hidden;
-    margin-bottom: 100px;
+    display: flex; /* Cambia a flexbox */
+    flex-direction: column; /* Disposición en columna */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    grid-template-columns: none; /* Desactiva el grid-template-columns */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 10px; /* Menos padding */
+    margin-bottom: 50px; /* Menos margen en la parte inferior */
   }
-
-  }
-
-  .menu-cafeteria-productos li {
-    font-size: 1rem;
-  }
-
   .menu-cafeteria-productos .producto-imagen {
-    width: 130px;
-    border: 1px solid aquamarine;
+    width: 200px;
+    height: auto;
+    border: 5px solid #705438;
+    border-radius: 20%;
+  }
+  .menu-cafeteria-productos li {
+    font-size: 1.1rem; /* Tamaño de fuente más pequeño */
   }
 
-  .menu-cafeteria {
-    margin-top: 15rem;
+
+  /* Menú y combos */
+  .menu-cafeteria-combos ul.menu-cafeteria-combos {
+    grid-template-columns: 1fr; /* Una sola columna */
   }
 
-  .menu-cafeteria ul.menu-cafeteria-combos {
-    color: black;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .menu-cafeteria ul.menu-cafeteria-combos li {
-    background-color: gold;
-  }
-
-  .eventos-cafeteria ul:last-child {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .eventos-cafeteria li {
-    min-width: 100%;
-    padding: 15px;
-    border: aquamarine 2px solid;
-    font-size: 18px;
-    margin-bottom: 10px;
-    margin: 5px;
+  /* Contacto */
+  .columna-formulario {
+    max-width: 100%; /* Ancho completo */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-top: 1rem; /* Menos margen superior */
   }
 
   .imagen-contacto img {
     display: none;
-  }
-
-  .columna-formulario {
-    margin-right: 0;
-  }
-
-  .formulario-cafeteria {
-    min-width: 100%;
-    width: 90%;
-    align-items: center;
-    margin: auto;
-  }
-
-  .formulario-cafeteria label,
-  .formulario-cafeteria input[type="text"],
-  .formulario-cafeteria input[type="email"],
-  .formulario-cafeteria textarea,
-  .formulario-cafeteria button {
-    min-width: 100%;
-  }
-
-  .contactos-cafeteria {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contactos-cafeteria .columna-formulario h2 {
-    font-size: 33px;
-  }
-
-/* Tablet (1024px and below) */
-@media (max-width: 1024px) {
-  .eventos-cafeteria ul:last-child {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu-cafeteria-productos {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-  }
-  .eventos-cafeteria li {
-    min-width: 100%;
-    padding: 15px;
-    border: aquamarine 2px solid;
-    font-size: 18px;
-    margin-bottom: 10px;
+    height: auto; /* Altura automática */
   }
 }
