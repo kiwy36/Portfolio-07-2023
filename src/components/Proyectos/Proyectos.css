@@ -108,6 +108,9 @@
     background-color: #141514;
     color: aquamarine;
 }
+.proyectoSQL{
+    display: none;
+}
 /* Media Queries for Tablet */
 @media (max-width: 1024px) {
     .portfolio .galeria .proyecto {

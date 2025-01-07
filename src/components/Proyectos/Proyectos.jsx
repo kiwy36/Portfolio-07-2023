@@ -70,6 +70,14 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
+                        <img src='https://photos.fife.usercontent.google.com/pw/AP1GczMswunFUBVDHTZUUDiHYdtt2oBWgRiK-M1EbVtMMPciJNfa5EQDX69ksw=w668-h522-s-no?authuser=0' alt='tienda banner' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>GAP</h3>
+                            <p>Gestor de almacenamiento de información de productos</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://gap-two.vercel.app/'>Ver</Link>
+                        </div>
+                    </div>
+                    <div className='proyecto proyectoSQL'>
                         <img src='https://i.ibb.co/zQSmVqz/sql.pnghttps://lh3.googleusercontent.com/pw/AP1GczM8m28XHmkW2Hw0vcoVaFz3WHATf-ACR9381LC4cP8kNNwAVWiJKzrYnzrwoy4OmzFFA5Pso-GXqtXaNiJEdEYmEMB_kb8TK6IzCiALtjwfn1H9ZGlS83VFLIEBIkD3x5Wfwj_W0KTf7TC7VNTAXrWZpw=w1336-h600-s-no?authuser=0' alt='tienda sql' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Tienda simulator a base de SQL</h3>
