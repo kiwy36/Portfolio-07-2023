@@ -70,7 +70,7 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
-                        <img src='https://photos.fife.usercontent.google.com/pw/AP1GczMswunFUBVDHTZUUDiHYdtt2oBWgRiK-M1EbVtMMPciJNfa5EQDX69ksw=w668-h522-s-no?authuser=0' alt='tienda banner' loading="lazy"/>
+                        <img src='https://lh3.googleusercontent.com/pw/AP1GczMSe0CJ_9tcjB-xXELMyaEA9NvXFjj5Rcj2g5DcoUadj2NK4zZft0vFDGRCFXveaJu9O4iYKjR27KpNwyCErd_UuKl4CSO_5zlLNoPB1vSzn8525BEqdBqXxSBwuzffCMNEMhMGu6v1QBoYVXRm9Br1Yg=w668-h522-s-no?authuser=0' alt='tienda banner' loading="lazy"/>
                         <div className='overlay'>
                             <h3>GAP</h3>
                             <p>Gestor de almacenamiento de información de productos</p>
