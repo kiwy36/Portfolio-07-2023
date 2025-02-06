@@ -86,7 +86,7 @@ const Proyectos = () => {
                         </div>
                     </div>
                     <div className='proyecto'>
-                        <img src='https://ibb.co/601T2gtn' alt='Journey space' loading="lazy"/>
+                        <img src='https://i.ibb.co/QvCTZrHb/av-esp.png' alt='Journey space' loading="lazy"/>
                         <div className='overlay'>
                             <h3>Journey space</h3>
                             <p>Mini juego incursionando con Ts</p>
