@@ -85,6 +85,14 @@ const Proyectos = () => {
                             <Link className='start-button' target="_blank" rel="noreferrer" to='https://ca-c-backend.vercel.app/index.html'>Ver</Link>
                         </div>
                     </div>
+                    <div className='proyecto'>
+                        <img src='https://photos.fife.usercontent.google.com/pw/AP1GczNIQzj8fhNIplpb0rcQJUa2fH-jpXaHFyW7Cz5B3cOj7mWU7ai9a5jYbw=w448-h370-s-no?authuser=0' alt='Journey space' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>Journey space</h3>
+                            <p>Mini juego incursionando con Ts</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://ts-p.vercel.app/'>Ver</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
