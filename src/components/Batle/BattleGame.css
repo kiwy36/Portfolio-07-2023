@@ -70,6 +70,8 @@
   .batlegame .contenido-seccion .cartaDino button img {
     width: 100%;
     height: 180px;
+    border-radius: 12px;
+    margin-top: 10px;
   }
   .batlegame .contenido-seccion .computadora .cartaDino button {
     border-color: red;

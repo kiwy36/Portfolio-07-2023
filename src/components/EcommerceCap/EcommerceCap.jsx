@@ -240,7 +240,7 @@ const EcommerceCap = () => {
       <Navbar expand="lg" variant="dark" className="ecommerce-nav" ref={navbarRef} style={{ backgroundColor: '#FFF',}} sticky="top">
           <Container fluid>
             <Navbar.Brand href="#inicio">
-              <img className="img-logo" src="https://lh3.googleusercontent.com/pw/AP1GczPL74zS9TYgNemT1wmuzXAHLl9TbyxecwhUcAFSwd1tOTxNM01qP8N7VK9CqDI-18lga8HpfjP_KZ6nuQSU3UbeLLvq_WCtT7FLvJZ3_DVsYIipaM6uNeWYiIcsH12Z09-dj8cn6pAZ2Uhr3QRRMsSzBg=w500-h396-s-no?authuser=0" alt="logo" />
+              <img className="img-logo" src="https://i.ibb.co/ycpTFgk3/12345-fotor-bg-remover-20230715232152.png" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarNav" className={`icono-toggle-navmenu ${menuExpandido ? "active" : ""}`} onClick={toggleMenu} />
             <Navbar.Collapse id="navbarNav"expanded={menuExpandido} in={menuExpandido} className="navbar-collapse">

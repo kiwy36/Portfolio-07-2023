@@ -17,15 +17,15 @@ const Memorama = () => {
   const [gameFinished, setGameFinished] = useState(false);
 
   const images = [
-    'https://lh3.googleusercontent.com/pw/AP1GczM3MytyH9OZEYw1bA2Kd8MwLTymj1OBadkbOwUDuUNZv3ZY2yYKG29YSAKiD0TTolai2sLEcDIIPpl2RsxVNmDr0X-s72_oB9ytY1LWaJPT_VhE5Jrj6vUs_Q3VNS22PcJgV8pjdjMon7N4gI-qKsWRvg=w453-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczNc0dzMZ6QbxtlDWmfXmOVrLs2dRj4h4glxJE0-K_wcnXrJX9SOQR90JYH_3o8RHl6rIdz3f3XlRrC6pr8uYVMh2JLJGwI1wBYMU7GeuEswFFqALdMMoagTlppDRj_fPrDa8IMJ6wA6jtEQlhpZ_pug0Q=w347-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczOTMOYMSKFl0rs_D8CIoVVC85wxVaHdBj32B6W1kVw8AJnWg-ovoBSBXmlbOOBuGV5jZ6bOdZwE1tLFRROjDt5apwlBJ4fLIEDoteCDDTeA5_A4jx6P9cDjXIUHT-ADf4-JmuQATk0r-k9KQlWZKsv2VA=w348-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczM2JwghpPDJfnEiCzlbqMdb09j-Eh9f4ekfofyqgUGRUJEYqhicTiUFG_k2_rgB-MM0cJp3zAjolpLYUG7mA9jJfD48-IaiV9AgFPV1xBjgERZrtSevl_80UHChWBrGSQSREa8R1ciYBnl01Hb1kXUAUw=w348-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczO2zRM8lJeqHiVaVBUG4g4-45Y2J4UxqVGT9tVwWVmnkhrh6Gkez1wKqqhaPBtOAOTZiTjJyXVhCIBm6CGi0ayzyU0O0w75mvLU2eFVFWUynGMFulEIjpfw5JK8_DZdSpX4ZWjjNxVoa8ytNe_VHzCaZA=w348-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczO8uNg7ahEvzN239TUge66qanr6-qLwxDthMCiS5KpSmIu1unrrELuE189aMLSAavNBQ3prULq30-DpHKT4DjWaqkxVEwmEmhhpn7s9Cp5MpyxxqObe0uqlU7lbmgPV7BNI0dHBGz8sQAeHQS6NJOCeEQ=w413-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczNPJSS0lwW2Uj_Ehr7SpGH59c0VkVH30S6E9rtMaB-VltOM6c21WjQvK936yuPPRFofY6ZWrsznuPWr7nDSU0npngBOR6evAg3uzL_ChUjhl-_Fgljc5TjN4DJxL6dtQ0iQ2NGxjXK0y8cQaZJzm9WPtg=w348-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczMAc1q3sQVhqaqCq6p2mzEdGxi44W0hC8wnC2lJtJq4t1e5xQKiujO_joO6GeZymjblYF26vzLaU8n6cxhiN0HqJhrc4KB884KSsAo1Y6y7MDtU08UnkXSOj_diyfatG9Ugkn3imMaeOux46PoMomuwNw=w376-h618-s-no?authuser=0',
-    'https://lh3.googleusercontent.com/pw/AP1GczMOU5FMUBDV_YeIEMQIsKMLzp6QG7rEf270zYNDzjGV8c53HzDzs2PGBkkvpxhMgrDCX9QXL5wfwepg29ES5lQ9RKYgMW45d-P-JDEcVcptifas_BXW9CYYhEa6uRo9hXVsBAm9zYT9Ctp3M9fMs-JtYw=w349-h618-s-no?authuser=0',
+    'https://i.ibb.co/prJRQ3LL/dino-00.jpg',
+    'https://i.ibb.co/hbVrmVn/dino-01.jpg',
+    'https://i.ibb.co/Fqg2kDbd/dino-02.jpg',
+    'https://i.ibb.co/7tvypm7b/dino-03.jpg',
+    'https://i.ibb.co/nNF2HNth/dino-05.jpg',
+    'https://i.ibb.co/Ldph4GQ5/dino-06.jpg',
+    'https://i.ibb.co/q3f0rRbD/dino-07.jpg',
+    'https://i.ibb.co/qYW4cd8m/dino-08.jpg',
+    'https://i.ibb.co/vCjgrNyp/dino-09.jpg',
   ];
 
   const shuffledImages = [...images, ...images].sort(() => Math.random() - 0.5);
