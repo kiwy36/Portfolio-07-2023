@@ -45,15 +45,15 @@ const MyDate = () => {
                             <h3>Lugares de Formación</h3>
                             <div className='contenedor-formacion'>
                                 <div className='formacion'>
-                                    <img src='https://lh3.googleusercontent.com/pw/AP1GczNeF4GSJ4X0AC44spQzT6KobWDHZe2lknIVPaHVXMop4U6YdhAB7TXDgi1y-TsSi8erKaoJW3HWh1CiaWCKb8XsCTwShJTyPVcNML7NVdVS75lvJNDtsrAVBU93GZSHWpkNKESEtMyhfKmEbfHtppGcsw=w618-h618-s-no?authuser=0' alt='Coderhouse' className='imagen-formacion'/>
+                                    <img src='https://i.ibb.co/mCMgZFps/community-Icon-t5ji6wuld2z71.jpg' alt='Coderhouse' className='imagen-formacion'/>
                                     <span>Coderhouse</span>
                                 </div>
                                 <div className='formacion'>
-                                    <img src='https://lh3.googleusercontent.com/pw/AP1GczPIGaI1wkRwMizdcFh8BOlZM6FN2Pea_QYcc2lVjiP8KVe3Lr5-5-iw-L_ZqVKC82cR6Kua-GDkdlCxL0DpQutvAPO1kV6-h7Rfg9cNk-bu7TT2E85Nr0n-TMJsDrhkYO0dFTn9v6zTymS378ogUJq28Q=w225-h225-s-no?authuser=0' alt='Codo a Codo' className='imagen-formacion'/>
+                                    <img src='https://i.ibb.co/FLLdw69k/images.jpg' alt='Codo a Codo' className='imagen-formacion'/>
                                     <span>Codo a Codo</span>
                                 </div>
                                 <div className='formacion'>
-                                    <img src='https://lh3.googleusercontent.com/pw/AP1GczOT31VJ1wP7M2tV2sLsgbeI8j2KbNO4zGLHNHIrWGCutJ3MV0aquQsNo12-L2o3-e-m-gZqmGpRQrDkqpYAj1eguDyZ212-hjMzlboo0_04NgHcU98FwnBErA02GBO32s1HD2kArkZokQjHXlJAqZDRuQ=w618-h618-s-no?authuser=0' alt='Autodidacta' className='imagen-formacion'/>
+                                    <img src='https://i.ibb.co/TxxCzFj7/autodi.webp' alt='Autodidacta' className='imagen-formacion'/>
                                     <span>Autodidacta</span>
                                 </div>
                             </div>
