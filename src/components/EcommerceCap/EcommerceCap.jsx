@@ -34,13 +34,9 @@ const EcommerceCap = () => {
     localStorage.setItem('productos', JSON.stringify(datosProductos));
   };
   useEffect(() => {
-    const storedProductos = localStorage.getItem('productos');
-    if (storedProductos) {
-      setDatosProductos(JSON.parse(storedProductos));
-    } else {
-      leerColeccion();
-    }
+    leerColeccion();
   }, []);
+  
   const [carrito, setCarrito] = useState([]);
   const [mostrarCarrito, setMostrarCarrito] = useState(false);
   const [datosProductos, setDatosProductos] = useState([]);
