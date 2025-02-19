@@ -5,24 +5,23 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const CoffePage = () => {
   const carouselImages = [
-    "https://lh3.googleusercontent.com/pw/AP1GczPejwZzfUW35lU0LNiUxVQe8Q_1uJhiRbi9YV7azAqGifeiHHblLsBzsaaBgJ4lx9ZdFdJnfbLNfPKVky1HUtcXCh_FVWvlzY9ufUQ2kSmtcotLrywuul88TJp8HgGthJKtYGVE44KbmpT7l5bd8G8AvA=w750-h618-s-no?authuser=0",
-    "https://lh3.googleusercontent.com/pw/AP1GczPBLdBrlFMYFJxolouGAYfuFdLoCS-RX1FmSwM-ykEIqb8dtShJviZGLLVgkp0b7RfcNsqa0IBjQsZ8jCXQgl5T2gHTQ-I6ZrQVlI2EItRtsvrC-Fk0GcA6QTSwVFXjxVRB7QTck99rxJ1BmxTkJ95E5A=w412-h618-s-no?authuser=0",
-    "https://lh3.googleusercontent.com/pw/AP1GczOanzuHJQB6TtCuLwfEaj1c83S18fzUr7MqWLcDBwKd6oIfQFYdIoC3Um-xHDSyL7IShA9V1tQFzCkiPDy7ygosUK8a7WE9mhF1lJVTaC1Nx5IYPCSVSoh-G1HvCJCw_PmdENvWlZhVEml5jwAUOsydFA=w750-h618-s-no?authuser=0",
-    "https://lh3.googleusercontent.com/pw/AP1GczOpD_DyZBlJvq3WBDjZaw10Hc4zCCrLRJjdmKsto3pcvElxjyg5xvC1sVGc0P4qMzT3xOm3mAOZfGFqVKOQxXPa4EaGGvhiqVoxVLi5y7tDMZVq9pT06JxPr5EzPoZg6jAF9HLpTwjz91eSp5nvzQfKaQ=w412-h618-s-no?authuser=0",
+    "https://i.ibb.co/mVs2c8Xx/unnamed-12.png",
+    "https://i.ibb.co/C555r2WM/unnamed-13.png",
+    "https://i.ibb.co/V02nd36g/unnamed-14.png",
   ];
   const productos = [
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczPcAmrEQUw1QYit6kudgznDR06AS5qqpFqCVa9pdK9aEZFLSgTyMnusWuUE2q14jqMW6cB2jvi2jDvNqK_cZ32aZwsx9ZMuhnu5cL8k6ysCjOWjK4ZxCy4VcBPkst2aDmND9k0zn1K1-67A0qKWEgmx-Q=w412-h618-s-no?authuser=0',descripcion: 'Espresso',precio: '15 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczNqruwu3QqZI-YgIF53QbyYajG0L2U3sVBSmdgqdIyKDfRLmCkzqFnG3EpaBrLvKRRbGSWlW7OJvnJYbg6xLTpX_9s8SDI0dBmh9_QONiV43z2oTIegDAkkA7tFO4YCsJz1BQQnGPMbqygR5TLvXEkH7w=w412-h618-s-no?authuser=0',descripcion: 'Capuchino',precio: '20 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczNAM6jMhWA_HsOav1BnnmX_hm2_cHWISTlcHNk34NgqO3t3eDz7tXgAh5PQfZ3Kgc_JMVG5JM6zOGeTiqoSUS0mqF6RTGBFnzxl3xGo4417m0GP5rEw7Lc7xsg_M6bRww12M45YzGX1YuX5TBRZ3M9Ptw=w412-h618-s-no?authuser=0',descripcion: 'Americano',precio: '17 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczMT7k9NOWYd3JTskhMcu2PMIywHtWU75kTtfCgYIOPAvaH76YoTPxZvXtDxrNiCf8GPMiX_CfEzRxYeKi4p9nOrcCa1Neg5Suh56Ewo_dqD6Z7lFyb-dt74HWutMzUmCT4CzSVNiJRD5aH0FGaWIQdSlw=w412-h618-s-no?authuser=0',descripcion: 'Mocha',precio: '21 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczNKVe8jKzBma3llzRrXWB9R5x0VDxV3ggzNLa9XDspJGPL2ofFXbSnsuOqXizpLiAuF-xy7UxRa2bJe3SVOIFuf3Wgf8i9fxQJYyyIvOD1xWH2EqbRT1ZgsaGK-ifu-jo4IMJ2LIg14Kic2twdoRtN1rA=w412-h618-s-no?authuser=0',descripcion: 'Café Cortado',precio: '16 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczPryj6q0-2TR7as6QekzEj-3JlBbSH24AdC_VMJNOzPYniiNl2JGFkosVjdy-Q6Z2PPXr7M_0tWtBFVcAFOuinfoel95Y6Rwb-zaud2w8bezstTbmHMkbf5T9lU-Ok4cWWEYPHRCo9GCDPuq0DKVmTaJQ=w412-h618-s-no?authuser=0',descripcion: 'Café Fuerte',precio: '22 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczN-iT2E8iX8ylHChQYZxFV3faE-mmEi-z9wUaKfIdsBeZFdXxmCBTD9XLulIoDnqEO9asK5EjOVK-8bT0rSB2hsL6s3mUnyFki0wlBoZwEMLqE0dybo1_KD3-t69QxXXRWnAEV9hPcs4j-89W0w2oBxzQ=w412-h618-s-no?authuser=0',descripcion: 'Galleta de Chocolate',precio: '12 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczNJMG9122b5dKczEcTO1kWtlJ0hP4XD2diDbuqFM89GpOhzPvFR8-1XOBjZZZ_ve9CBuiiwnp1eK_Ch3-3Y2xbH_NR1H6KA5iDPHpuTv9EFHNNCL9BaEvdEaCBEc93DKbb9T7lJk3yeLeY3rxPV4UH-pA=w412-h618-s-no?authuser=0',descripcion: 'Scone de Glaseado',precio: '10 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczO3eg7v09JUBY0-8jLVhjhtgPMeLVsQ8I_BFF1fwU3Bpk_-_mg7VxQ__hBsvSHXbD3pCopCOH8-JAs38Z4NsUDoQWTIXiLWrpmifvUTRokWt9GKakDoAXm88ouGMwb5crtGzk1ZPVkRtXWS1T_Rz48__g=w412-h618-s-no?authuser=0',descripcion: 'Postre especial de Queso',precio: '16 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczPn3hdzvUSs-4dOG9U6bxmkF62XnzCEp36w-E_sv5xLgPqK_XI9NbsV8rhrZmz3J3ultEQ0JhSGWGOptDR-MdSIujaohLsEgYDFl9mT_hRK6Tzjdj7MiSeTvGKE3LM14u9sl2GwtsZDhMvr0gPS6noWCg=w412-h618-s-no?authuser=0',descripcion: 'Croissant con Chocolate',precio: '11 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczN7Srkgrn50wSuk9k0V4QtTTH6kWOOSgOFppi9wiQ7VfxyD5tioJGPMRyazX8TyEVxO12apTiJbW7gGVKJ0NhWNS-94FMgYSWEH8tEuMvxU8UlS0mkYFUoXYQ5tBOoNQwp8nrsrtKtcUak0TZBATvcP_g=w412-h618-s-no?authuser=0',descripcion: 'Porción de Pastel',precio: '12 Kiwy Pesos',},
-    {imgSrc: 'https://lh3.googleusercontent.com/pw/AP1GczMFywWaQSOxjs8QExOZCGRS_kKnbrO2eYAR2ZAHU3MmmPtJdAhKaAv6vqEDHvBxYGNKq5A8R4w2sWiPRkh3V_z1YZvJwMOvB4s9ZXQDd79YQSdXIHdkxMDrkVESngS0AiZRPKv3FGmOSyItlrop0Rjwbg=w412-h618-s-no?authuser=0',descripcion: 'Muffin especial',precio: '10 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/B5gtGV2Y/unnamed.png',descripcion: 'Espresso',precio: '15 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/tT0xbVjN/unnamed-1.png',descripcion: 'Capuchino',precio: '20 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/SjszdVR/unnamed-2.png',descripcion: 'Americano',precio: '17 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/tpq1yV0x/unnamed-3.png',descripcion: 'Mocachino',precio: '21 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/67cFXBn3/unnamed-4.png',descripcion: 'Café Cortado',precio: '16 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/Z1gDQSQc/unnamed-5.png',descripcion: 'Café Fuerte',precio: '22 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/Hfdywqkb/unnamed-6.png',descripcion: 'Galleta de Chocolate',precio: '12 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/WvW5CTXR/unnamed-7.png',descripcion: 'Scone de Glaseado',precio: '10 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/Xf3FtffN/unnamed-8.png',descripcion: 'Postre especial de Queso',precio: '16 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/FLBH8HzD/unnamed-9.png',descripcion: 'Croissant con Chocolate',precio: '11 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/s9w4GbSF/unnamed-10.png',descripcion: 'Porción de Pastel',precio: '12 Kiwy Pesos',},
+    {imgSrc: 'https://i.ibb.co/rf3qSDcD/unnamed-11.png',descripcion: 'Muffin especial',precio: '10 Kiwy Pesos',},
   ];
   return (
     <main className='contenedor-general-cafe'>
@@ -53,7 +52,7 @@ const CoffePage = () => {
             showThumbs={false}
             showStatus={false}
             showIndicators={false}
-            transitionTime={500}>
+            transitionTime={300}>
             {carouselImages.map((image, index) => (
               <div key={index}>
                 <img className='img-carousel' src={image} alt={`Slide ${index + 1}`} />
@@ -109,7 +108,7 @@ const CoffePage = () => {
           </form>
         </div>
         <div className="imagen-contacto">
-          <img src="https://lh3.googleusercontent.com/pw/AP1GczORkP3C1O7JFgTPLst560fxdVHHETAE2qRcFbfYOh-jl9DALDd3t4oNfL0O76LaHKudNnDAUa9zaUwMLbgN5R04V7F_Avt8p2yoIM0S434y5aV1viC9krXtlGS_g-2e63Sf_8x1wBJxPEJ2At0EuciHvA=w412-h618-s-no?authuser=0" alt="vendedor" />
+          <img src="https://i.ibb.co/S4x459F8/Imagen-de-Whats-App-2023-07-20-a-las-19-37-12.jpg" alt="vendedor" />
         </div>
       </section>
     </div>
