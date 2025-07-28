@@ -93,6 +93,14 @@ const Proyectos = () => {
                             <Link className='start-button' target="_blank" rel="noreferrer" to='https://ts-p.vercel.app/'>Ver</Link>
                         </div>
                     </div>
+                    <div className='proyecto'>
+                        <img src='https://i.ibb.co/209ygBTG/memory.png' alt='Journey space' loading="lazy"/>
+                        <div className='overlay'>
+                            <h3>Memory Game</h3>
+                            <p>Esto es parte de Arg. Programa</p>
+                            <Link className='start-button' target="_blank" rel="noreferrer" to='https://memory-game-seven-beige.vercel.app/'>Ver</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
